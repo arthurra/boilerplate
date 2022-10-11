@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   @extend %h1;
-  padding-top: $padding-md * 3;
-  padding-bottom: $padding-md;
+  padding-top: ($padding-base * 3);
+  padding-bottom: $padding-base;
 }
 
 %h2 {
@@ -26,22 +26,23 @@ h1 {
 
 h2 {
   @extend %h2;
-  padding-top: $padding-md * 3.5;
-  padding-bottom: $padding-md;
+  padding-top: ($padding-base * 3.5);
+  padding-bottom: $padding-base;
 }
 
 %h3 {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2rem;
   font-family: $font-family-title;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 h3 {
   @extend %h3;
-  padding-top: $padding-md * 3;
-  padding-bottom: $padding-md;
+  padding-top: ($padding-base * 4);
+  padding-bottom: $padding-base;
 }
 
 %h4 {
@@ -53,22 +54,23 @@ h3 {
 
 h4 {
   @extend %h4;
-  padding-top: $padding-md * 2;
-  padding-bottom: $padding-md * 1;
+  padding-top: ($padding-base * 2);
+  padding-bottom: ($padding-base * 1);
 }
 
 %h5 {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
   font-family: $font-family-text;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 h5 {
   @extend %h5;
-  padding-top: $padding-md;
-  padding-bottom: $padding-md;
+  padding-top: ($padding-base * 1.5);
+  padding-bottom: $padding-base;
 }
 
 %h6 {
@@ -82,8 +84,8 @@ h5 {
 
 h6 {
   @extend %h6;
-  padding-top: 1rem;
-  padding-bottom: $padding-md;
+  padding-top: ($padding-base * 1.5);
+  padding-bottom: $padding-base;
 }
 
 %p {
@@ -95,12 +97,11 @@ h6 {
 
 p {
   @extend %p;
-  padding-bottom: $padding-md;
+  padding-bottom: $padding-base;
 }
 
 %label {
   @extend %h5;
-  font-weight: 500;
 }
 
 label {
