@@ -10,21 +10,30 @@ $gray-500: #53555c;
 $gray-600: #363639;
 $gray-700: #23272e;
 
+$navy-100: #E4E9ED;
+$navy-400: #1451A5;
+$navy-700: #082f56;
+
 $orange-100: #FEDDC3;
 $orange-400: #FC8730;
 $orange-700: #B34B18;
+
 $purple-100: #E1DDF4;
 $purple-400: #6B52C7;
 $purple-700: #35247C;
+
 $blue-100: #C8E4FE;
 $blue-400: #1861C8;
 $blue-700: #0F3F81;
+
 $green-100: #d2ece3;
 $green-400: #1a8a60;
 $green-700: #0D5038;
+
 $yellow-100: #FEE9B4;
 $yellow-400: #FCA42D;
 $yellow-700: #AF751F;
+
 $red-100: #f8d8d9;
 $red-400: #da3e42;
 $red-700: #881315;
@@ -51,10 +60,11 @@ $nav-background-color: $gray-100;
 //             TYPOGRAPHY             \\
 // ---------------------------------- \\
 
+$title-color: $gray-600;
+
 $text-color: $gray-400;
 $text-color-light: $gray-300;
 $text-color-dark: $gray-500;
-$title-color: $gray-600;
 
 $link-color: $color-info;
 $link-color-light: $color-info-light;
@@ -85,11 +95,20 @@ $border-color: $gray-200;
 $border: $border-width $border-style $border-color;
 $border-radius: 0.25rem;
 
-$box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-$dark-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+$elevation-100: 0 0.5rem 1.5rem -1rem rgba(0, 0, 0, 0.2), 
+                0 0.25rem 1rem rgba(0, 0, 0, 0.1),
+                0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+$elevation-200: 0 1rem 4rem -2rem rgba(0, 0, 0, 0.5), 
+                0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
+                0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+$elevation-300: 0 2rem 10rem -5rem rgba(0, 0, 0, 0.8), 
+                0 1rem 4rem -2rem rgba(0, 0, 0, 0.5), 
+                0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
+                0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
+                0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 
-$text-highlight: 0 1px 0 #fff;
-$text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+$box-shadow: $elevation-100;
+$box-shadow-dark: $elevation-200;
 
 $input-height: 2rem;
 
