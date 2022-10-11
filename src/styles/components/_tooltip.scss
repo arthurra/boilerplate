@@ -19,7 +19,7 @@
     opacity: 0;
     z-index: 100;
     pointer-events: none;
-    transition: all $transition-duration $smooth-ease;
+    transition: all $transition-duration $transition-timing-function;
   }
 
   &:after {
@@ -36,7 +36,7 @@
     opacity: 0;
     z-index: 100;
     pointer-events: none;
-    transition: all $transition-duration $smooth-ease;
+    transition: all $transition-duration $transition-timing-function;
   }
 
   &:hover {

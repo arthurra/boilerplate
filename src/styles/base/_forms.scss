@@ -219,7 +219,7 @@ $help-text-height: $label-height;
   background-color: $input-background-color;
   border: $border;
   border-radius: $border-radius;
-  transition: all $golden-transition-duration $smooth-ease;
+  transition: all $transition-duration $transition-timing-function;
 
   .form-group--checkbox &,
   .form-group--radio & {
@@ -332,7 +332,7 @@ $help-text-height: $label-height;
     border-style: solid;
     border-width: 0.4rem 0.25rem;
     border-radius: $border-radius;
-    transition: border-color $transition-duration $smooth-ease;
+    transition: border-color $transition-duration $transition-timing-function;
   }
 
   &:before {

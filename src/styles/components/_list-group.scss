@@ -50,7 +50,7 @@ $list-group-item-badge-width: $list-group-item-height;
 .list-group__item {
   @extend %p;
   padding: calc(#{$list-group-item-padding} - 1px) 1rem calc(#{$list-group-item-padding} + 1px);
-  transition: all $transition-duration $smooth-ease;
+  transition: all $transition-duration $transition-timing-function;
 
   &:not(:first-of-type) {
     margin-top: -1px;

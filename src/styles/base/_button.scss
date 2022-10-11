@@ -25,7 +25,7 @@ $small-button-height: $button-height * 0.75;
   border-radius: $border-radius;
   cursor: pointer;
   box-shadow: $box-shadow;
-  transition: all $transition-duration $smooth-ease;
+  transition: all $transition-duration $transition-timing-function;
   // @include button-gradient($color-secondary, $color-primary)
 
   &--hover,

@@ -119,7 +119,7 @@ a {
   color: #1861C8;
   text-decoration: none;
   position: relative;
-  transition: color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: color 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 a:hover {
   color: #6B52C7;
@@ -282,7 +282,7 @@ small {
   border-radius: 0.25rem;
   cursor: pointer;
   box-shadow: 0 0.5rem 1.5rem -1rem rgba(0, 0, 0, 0.2), 0 0.25rem 1rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .button--hover, .button:hover, .button:focus {
   border-color: #6B52C7;
@@ -557,7 +557,7 @@ small {
   background-color: #fafcfc;
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
-  transition: all 0.1618s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .form-group--checkbox .form-group__input, .form-group--radio .form-group__input {
   padding: 0 0.5rem 0 0;
@@ -651,7 +651,7 @@ small {
   border-style: solid;
   border-width: 0.4rem 0.25rem;
   border-radius: 0.25rem;
-  transition: border-color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: border-color 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .form-group--select:before {
   top: 0.5rem;
@@ -757,7 +757,7 @@ small {
   opacity: 0;
   z-index: 100;
   pointer-events: none;
-  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .has-tooltip:after {
   position: absolute;
@@ -774,7 +774,7 @@ small {
   opacity: 0;
   z-index: 100;
   pointer-events: none;
-  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .has-tooltip:hover:before, .has-tooltip:hover:after {
   opacity: 1;
@@ -871,7 +871,7 @@ small {
 
 .list-group__item {
   padding: calc(1rem - 1px) 1rem calc(1rem + 1px);
-  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .list-group__item:not(:first-of-type) {
   margin-top: -1px;

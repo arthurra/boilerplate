@@ -117,9 +117,14 @@ $input-height: 2rem;
 //          TIMING FUNCTIONS          \\
 // ---------------------------------- \\
 
-$transition-duration: 0.1s;
-$golden-transition-duration: 0.1618s;
+$ease-sine: cubic-bezier(0.37, 0, 0.63, 1);
+$ease-quad: cubic-bezier(0.45, 0, 0.55, 1);
+$ease-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+$ease-quart: cubic-bezier(0.76, 0, 0.24, 1);
+$ease-quint: cubic-bezier(0.83, 0, 0.17, 1);
+$ease-expo: cubic-bezier(0.87, 0, 0.13, 1);
+$ease-circ: cubic-bezier(0.85, 0, 0.15, 1);
+$ease-bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
-$bounce: cubic-bezier(.35,.25,0,1.5);
-$heavy-bounce: cubic-bezier(.32,2,.65,.91);
-$smooth-ease: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+$transition-duration: 150ms;
+$transition-timing-function: $ease-cubic;

@@ -42,7 +42,7 @@ a {
   color: $link-color;
   text-decoration: none;
   position: relative;
-  transition: color $transition-duration $smooth-ease;
+  transition: color $transition-duration $transition-timing-function;
 
   &:hover {
     color: $color-primary;
