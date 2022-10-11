@@ -12,10 +12,14 @@
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "sass": "^1.55.0"
   },
   "dependencies": {
     "gulp": "^3.9.1"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
   }
 }
