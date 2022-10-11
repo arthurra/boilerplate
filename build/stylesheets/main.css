@@ -236,6 +236,7 @@ h5 {
 }
 
 .paint-chip__values, .form-group__help-block, h6 {
+  font-style: italic;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
