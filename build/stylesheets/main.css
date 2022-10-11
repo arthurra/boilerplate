@@ -111,7 +111,7 @@ footer {
 }
 
 header {
-  border-bottom: 1px solid #c4c9cb;
+  border-bottom: 2px solid #c4c9cb;
   margin: -1px 0;
 }
 
@@ -149,15 +149,15 @@ section {
   padding-bottom: 1rem;
 }
 section + section {
-  border-top: 1px solid #c4c9cb;
+  border-top: 2px solid #c4c9cb;
   margin-top: -1px;
 }
 
 code {
-  border: 1px solid #c4c9cb;
+  border: 2px solid #c4c9cb;
   background-color: #fafcfc;
   padding: 0.125rem 0.25rem;
-  border-radius: 2px;
+  border-radius: 0.25rem;
   font-family: monospace;
   -webkit-font-feature-settings: normal;
           font-feature-settings: normal;
@@ -279,7 +279,7 @@ small {
   color: #fff;
   background-color: #35247C;
   border: 1px solid #35247C;
-  border-radius: 2px;
+  border-radius: 0.25rem;
   cursor: pointer;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -298,7 +298,7 @@ small {
 .button [disabled] {
   color: #9aa2a9 !important;
   background: #fafcfc !important;
-  border: 1px solid #c4c9cb !important;
+  border: 2px solid #c4c9cb !important;
   cursor: not-allowed !important;
   box-shadow: none !important;
 }
@@ -555,8 +555,8 @@ small {
   line-height: 2rem;
   color: #6F7281;
   background-color: #fafcfc;
-  border: 1px solid #c4c9cb;
-  border-radius: 2px;
+  border: 2px solid #c4c9cb;
+  border-radius: 0.25rem;
   transition: all 0.1618s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .form-group--checkbox .form-group__input, .form-group--radio .form-group__input {
@@ -595,7 +595,7 @@ small {
   cursor: not-allowed;
 }
 .form-group__input.disabled:hover, .form-group__input[disabled]:hover {
-  border: 1px solid #c4c9cb;
+  border: 2px solid #c4c9cb;
 }
 .form-group__input.readonly, .form-group__input[readonly] {
   background-color: transparent;
@@ -650,7 +650,7 @@ small {
   position: relative;
   border-style: solid;
   border-width: 0.4rem 0.25rem;
-  border-radius: 2px;
+  border-radius: 0.25rem;
   transition: border-color 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .form-group--select:before {
@@ -682,8 +682,8 @@ small {
   margin: -1px 0 calc(1rem - 1px) 0;
   line-height: 1;
   background-color: #fff;
-  border: 1px solid #c4c9cb;
-  border-radius: 2px;
+  border: 2px solid #c4c9cb;
+  border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .table th,
@@ -696,13 +696,13 @@ small {
   text-align: left;
   color: #363639;
   background-color: #fafcfc;
-  border-bottom: 1px solid #c4c9cb;
+  border-bottom: 2px solid #c4c9cb;
 }
 .table td {
   height: 3rem;
 }
 .table tr:not(:last-of-type) td {
-  border-bottom: 1px solid #c4c9cb;
+  border-bottom: 2px solid #c4c9cb;
 }
 .table tr:hover td {
   background-color: white;
@@ -751,7 +751,7 @@ small {
   color: #fff;
   padding: 0.25rem;
   background-color: #363639;
-  border-radius: 2px;
+  border-radius: 0.25rem;
   -webkit-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
   opacity: 0;
@@ -806,8 +806,8 @@ small {
 .paint-chip, .panel {
   margin-top: -1px;
   margin-bottom: -1px;
-  border: 1px solid #c4c9cb;
-  border-radius: 2px;
+  border: 2px solid #c4c9cb;
+  border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -819,7 +819,7 @@ small {
   margin-bottom: -1px;
   padding: 1rem;
   background-color: #fafcfc;
-  border-bottom: 1px solid #c4c9cb;
+  border-bottom: 2px solid #c4c9cb;
 }
 
 .panel__title {
@@ -836,7 +836,7 @@ small {
   margin-top: -1px;
   padding: 0.5rem 1rem;
   background-color: #fafcfc;
-  border-top: 1px solid #c4c9cb;
+  border-top: 2px solid #c4c9cb;
 }
 
 .list-group {
@@ -864,8 +864,8 @@ small {
 
 .list-group {
   margin-bottom: calc(1rem - 2px);
-  border: 1px solid #c4c9cb;
-  border-radius: 2px;
+  border: 2px solid #c4c9cb;
+  border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -875,7 +875,7 @@ small {
 }
 .list-group__item:not(:first-of-type) {
   margin-top: -1px;
-  border-top: 1px solid #c4c9cb;
+  border-top: 2px solid #c4c9cb;
 }
 .list-group__item:hover {
   background-color: white;
@@ -942,6 +942,9 @@ small {
   padding: 1rem;
 }
 
+.paint-chip__color {
+  border-radius: 0.25rem;
+}
 .paint-chip--primary .paint-chip__color {
   background-color: #6B52C7;
 }

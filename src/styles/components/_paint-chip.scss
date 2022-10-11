@@ -38,6 +38,8 @@
 }
 
 .paint-chip__color {
+  border-radius: $border-radius;
+  
   .paint-chip--primary & {
     background-color: $color-primary;
   }
