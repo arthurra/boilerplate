@@ -10,37 +10,54 @@ $gray-500: #53555c;
 $gray-600: #363639;
 $gray-700: #23272e;
 
-$sg-pink: #FF7A67;
-$sg-fuchsia: #CC74B7;
-$sg-purple: #977FD2;
-$sg-blue: #2c97de;
-$sg-navy: #2f6f9f;
-$sg-aqua: #00C9BC;
-$sg-teal: #099;
-$sg-green: #39C46C;
-$sg-yellow: #fdbb37;
-$sg-orange: #E87E4B;
-$sg-red: #D63A3A;
+$orange-100: #FEDDC3;
+$orange-400: #FC8730;
+$orange-700: #B34B18;
+$purple-100: #E1DDF4;
+$purple-400: #6B52C7;
+$purple-700: #35247C;
+$blue-100: #C8E4FE;
+$blue-400: #1861C8;
+$blue-700: #0F3F81;
+$green-100: #d2ece3;
+$green-400: #1a8a60;
+$green-700: #0D5038;
+$yellow-100: #FEE9B4;
+$yellow-400: #FCA42D;
+$yellow-700: #AF751F;
+$red-100: #f8d8d9;
+$red-400: #da3e42;
+$red-700: #881315;
 
-$color-danger: $sg-red;
-$color-warning: $sg-yellow;
-$color-success: $sg-green;
-$color-info: $sg-blue;
+$color-primary: $purple-400;
+$color-primary-light: $purple-100;
+$color-secondary: $purple-700;
+$color-secondary-light: $purple-100;
 
-$color-primary: $sg-navy;
-$color-secondary: $sg-blue;
+$color-danger: $red-400;
+$color-danger-light: $red-100;
+$color-warning: $yellow-400;
+$color-warning-light: $yellow-100;
+$color-success: $green-400;
+$color-success-light: $green-100;
+$color-info: $blue-400;
+$color-info-light: $blue-100;
 
 $input-background-color: $gray-100;
-$nav-background-color: lighten($gray-100, 2%);
+$nav-background-color: $gray-100;
 
 
 // ---------------------------------- \\
 //             TYPOGRAPHY             \\
 // ---------------------------------- \\
 
-$text-color: $gray-500;
-$light-text-color: $gray-400;
-$link-color: $color-secondary;
+$text-color: $gray-400;
+$text-color-light: $gray-300;
+$text-color-dark: $gray-500;
+$title-color: $gray-600;
+
+$link-color: $color-info;
+$link-color-light: $color-info-light;
 
 $base-font-size: 16px;
 

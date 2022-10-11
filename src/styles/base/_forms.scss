@@ -204,7 +204,7 @@ $help-text-height: $label-height;
   }
 
   &--disabled .form-group__input-icon {
-    color: $light-text-color;
+    color: $text-color-light;
   }
 }
 
@@ -227,7 +227,7 @@ $help-text-height: $label-height;
   }
 
   .form-group--file & {
-    color: $light-text-color;
+    color: $text-color-light;
 
     &:hover {
       color: $link-color
@@ -235,7 +235,7 @@ $help-text-height: $label-height;
   }
 
   &::placeholder {
-    color: $light-text-color;
+    color: $text-color-light;
   }
 
   &:hover,
@@ -253,7 +253,7 @@ $help-text-height: $label-height;
 
   &.disabled,
   &[disabled] {
-    color: $light-text-color;
+    color: $text-color-light;
     background-color: $gray-100;
     cursor: not-allowed;
 
@@ -288,7 +288,7 @@ $help-text-height: $label-height;
 
 .form-group__input-icon {
   font-size: 0.8em;
-  color: $light-text-color;
+  color: $text-color-light;
 
   &--success {
     color: $color-success;
@@ -308,7 +308,7 @@ $help-text-height: $label-height;
   display: inline-block;
   font: $h6;
   line-height: $help-text-height;
-  color: $light-text-color;
+  color: $text-color-light;
 
   &--info {
     color: $color-info;
@@ -337,12 +337,12 @@ $help-text-height: $label-height;
 
   &:before {
     top: 0.5rem;
-    border-color: $light-text-color transparent transparent transparent;
+    border-color: $text-color-light transparent transparent transparent;
   }
 
   &:after {
     top: -0.5rem;
-    border-color: transparent transparent $light-text-color transparent;
+    border-color: transparent transparent $text-color-light transparent;
   }
 }
 
