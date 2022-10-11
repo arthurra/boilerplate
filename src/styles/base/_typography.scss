@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   @extend %h1;
-  padding-top: $padding * 3;
-  padding-bottom: $padding;
+  padding-top: $padding-md * 3;
+  padding-bottom: $padding-md;
 }
 
 %h2 {
@@ -26,8 +26,8 @@ h1 {
 
 h2 {
   @extend %h2;
-  padding-top: $padding * 3.5;
-  padding-bottom: $padding;
+  padding-top: $padding-md * 3.5;
+  padding-bottom: $padding-md;
 }
 
 %h3 {
@@ -40,8 +40,8 @@ h2 {
 
 h3 {
   @extend %h3;
-  padding-top: $padding * 3;
-  padding-bottom: $padding;
+  padding-top: $padding-md * 3;
+  padding-bottom: $padding-md;
 }
 
 %h4 {
@@ -53,8 +53,8 @@ h3 {
 
 h4 {
   @extend %h4;
-  padding-top: $padding * 2;
-  padding-bottom: $padding * 1;
+  padding-top: $padding-md * 2;
+  padding-bottom: $padding-md * 1;
 }
 
 %h5 {
@@ -67,8 +67,8 @@ h4 {
 
 h5 {
   @extend %h5;
-  padding-top: $padding;
-  padding-bottom: $padding;
+  padding-top: $padding-md;
+  padding-bottom: $padding-md;
 }
 
 %h6 {
@@ -83,7 +83,7 @@ h5 {
 h6 {
   @extend %h6;
   padding-top: 1rem;
-  padding-bottom: $padding;
+  padding-bottom: $padding-md;
 }
 
 %p {
@@ -95,7 +95,7 @@ h6 {
 
 p {
   @extend %p;
-  padding-bottom: $padding;
+  padding-bottom: $padding-md;
 }
 
 %label {

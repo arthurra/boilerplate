@@ -2,7 +2,7 @@
 //             VARIABLES              \\
 // ---------------------------------- \\
 
-$button-height: $padding * 2;
+$button-height: $padding-md * 2;
 $small-button-height: $button-height * 0.75;
 
 
@@ -16,7 +16,7 @@ $small-button-height: $button-height * 0.75;
   justify-content: center;
   position: relative;
   height: $button-height;
-  padding: 0 $padding;
+  padding: 0 $padding-md;
   @extend %p;
   line-height: 1;
   color: #fff;
@@ -82,7 +82,7 @@ $small-button-height: $button-height * 0.75;
 
   &--small {
     height: $small-button-height;
-    padding: 0 $half-padding;
+    padding: 0 $padding-sm;
   }
 
   &--outline {
@@ -191,5 +191,5 @@ $small-button-height: $button-height * 0.75;
 }
 
 .button__icon-label {
-  margin-left: $half-padding;
+  margin-left: $padding-sm;
 }

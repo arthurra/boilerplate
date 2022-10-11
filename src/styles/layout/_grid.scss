@@ -2,7 +2,7 @@ body {
   display: grid;
   grid-template-columns: minmax(12em, 1fr) 4fr;
   grid-template-rows: auto 1fr;
-  grid-gap: $padding * 2;
+  grid-gap: $padding-md * 2;
   grid-template-areas:
     "header   header"
     "sidebar  main"
@@ -31,26 +31,26 @@ footer {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  grid-gap: $padding;
+  grid-gap: $padding-md;
 }
 
 .grid-columns {
   display: grid;
   grid-template-columns: repeat( 4, 1fr );
-  grid-gap: 0 $padding;
+  grid-gap: 0 $padding-md;
 }
 
 .grid-columns-half {
   display: grid;
   grid-template-columns: repeat( 2, 1fr );
-  grid-gap: 0 $padding;
+  grid-gap: 0 $padding-md;
 }
 
 .grid-columns-5 {
   display: grid;
   grid-template-columns: repeat( 5, auto );
-  grid-gap: $padding;
+  grid-gap: $padding-md;
   justify-items: start;
   justify-content: start;
-  margin-bottom: $padding;
+  margin-bottom: $padding-md;
 }

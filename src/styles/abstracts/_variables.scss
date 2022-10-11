@@ -70,9 +70,14 @@ $font-family-mono: "Roboto Mono";
 //               DISPLAY              \\
 // ---------------------------------- \\
 
-$padding: 1rem;
-$half-padding: $padding / 2;
-$quarter-padding: $half-padding / 2;
+$padding-base: 1rem;
+
+$padding-xs: ($padding-base / 4);
+$padding-sm: ($padding-base / 2);
+$padding-md: $padding-base;
+$padding-lg: ($padding-base * 1.5);
+$padding-xl: ($padding-base * 2);
+$padding-xxl: ($padding-base * 2.5);
 
 $dark-border: 2px solid $gray-400;
 $border: 1px solid $gray-200;

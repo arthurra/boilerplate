@@ -30,7 +30,7 @@ header,
 aside,
 main,
 footer {
-  padding: $padding;
+  padding: $padding-md;
 }
 
 header {
@@ -57,7 +57,7 @@ label {
 }
 
 ol, ul {
-  padding-left: $padding;
+  padding-left: $padding-md;
 }
 
 ol {
@@ -75,7 +75,7 @@ li {
 }
 
 section {
-  padding-bottom: $padding;
+  padding-bottom: $padding-md;
 
   & + & {
     border-top: $border;
@@ -86,7 +86,7 @@ section {
 code {
   border: $border;
   background-color: $gray-100;
-  padding: ($quarter-padding / 2) $quarter-padding;
+  padding: ($padding-xs / 2) $padding-xs;
   border-radius: $border-radius;
   font-family: monospace;
   font-feature-settings: normal;

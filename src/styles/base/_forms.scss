@@ -2,7 +2,7 @@
 //             VARIABLES              \\
 // ---------------------------------- \\
 
-$input-height: $padding * 2;
+$input-height: $padding-md * 2;
 $icon-width: $input-height;
 $label-height: $input-height * 0.75;
 $help-text-height: $label-height;
@@ -52,13 +52,13 @@ $help-text-height: $label-height;
 
 .form-group--checkbox,
 .form-group--radio {
-  grid-template-rows: ($label-height - $half-padding) $input-height;
+  grid-template-rows: ($label-height - $padding-sm) $input-height;
   grid-template-columns: auto;
   grid-auto-rows: $input-height;
   grid-template-areas:
     "label"
     "inputs";
-  grid-row-gap: $half-padding;
+  grid-row-gap: $padding-sm;
   justify-content: start;
 
   .form-group__input {
@@ -86,7 +86,7 @@ $help-text-height: $label-height;
   grid-template-rows:
     auto
     $input-height
-    minmax(#{($input-height * 2) + $half-padding}, auto)
+    minmax(#{($input-height * 2) + $padding-sm}, auto)
     auto;
   grid-template-areas:
     "label           label     label"
@@ -97,8 +97,8 @@ $help-text-height: $label-height;
   .form-group__input {
     grid-row: 2 / -2;
     grid-column: 1 / -1;
-    padding-top: $quarter-padding;
-    padding-bottom: $quarter-padding;
+    padding-top: $padding-xs;
+    padding-bottom: $padding-xs;
   }
 }
 
@@ -155,7 +155,7 @@ $help-text-height: $label-height;
 
 .form-group {
   position: relative;
-  margin-bottom: $padding + $half-padding;
+  margin-bottom: $padding-md + $padding-sm;
 
   &--info {
     .form-group__input {
@@ -212,7 +212,7 @@ $help-text-height: $label-height;
   appearance: none;
   display: block;
   max-width: 100%;
-  padding: 0 $half-padding;
+  padding: 0 $padding-sm;
   line-height: $input-height;
   @extend %p;
   color: $text-color;
@@ -223,7 +223,7 @@ $help-text-height: $label-height;
 
   .form-group--checkbox &,
   .form-group--radio & {
-    padding: 0 $half-padding 0 0;
+    padding: 0 $padding-sm 0 0;
   }
 
   .form-group--file & {

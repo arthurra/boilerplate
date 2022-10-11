@@ -23,7 +23,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: auto;
-  grid-gap: $padding;
+  grid-gap: $padding-md;
   justify-content: start;
   justify-items: start;
 }
@@ -49,12 +49,12 @@
 
 .panel {
   @extend %panel;
-  margin-bottom: calc(#{$padding} - 1px);
+  margin-bottom: calc(#{$padding-md} - 1px);
 }
 
 .panel__header {
   margin-bottom: -1px;
-  padding: $padding;
+  padding: $padding-md;
   background-color: $gray-100;
   border-bottom: $border;
 }
@@ -66,12 +66,12 @@
 }
 
 .panel__body {
-  padding: ($padding * 1.5) $padding;
+  padding: ($padding-md * 1.5) $padding-md;
 }
 
 .panel__footer {
   margin-top: -1px;
-  padding: $half-padding $padding;
+  padding: $padding-sm $padding-md;
   background-color: $gray-100;
   border-top: $border;
 }

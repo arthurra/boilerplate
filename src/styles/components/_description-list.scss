@@ -5,7 +5,7 @@
 .description-list {
   display: grid;
   grid-columns: 1fr 4fr;
-  grid-gap: $padding;
+  grid-gap: $padding-md;
   grid-template-areas: "lebel content";
 }
 
@@ -15,7 +15,7 @@
 // ---------------------------------- \\
 
 .description-list {
-  margin-bottom: $padding
+  margin-bottom: $padding-md;
 }
 
 .description-list__label {

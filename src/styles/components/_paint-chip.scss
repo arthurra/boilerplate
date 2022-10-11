@@ -33,8 +33,8 @@
 
 .paint-chip {
   @extend %panel;
-  margin-bottom: calc(#{$padding} - 1px);
-  padding: $padding;
+  margin-bottom: calc(#{$padding-md} - 1px);
+  padding: $padding-md;
 }
 
 .paint-chip__color {

@@ -2,8 +2,8 @@
 //             VARIABLES              \\
 // ---------------------------------- \\
 
-$table-cell-height: $padding * 3;
-$condensed-table-cell-height: $padding * 2;
+$table-cell-height: $padding-md * 3;
+$condensed-table-cell-height: $padding-md * 2;
 
 
 // ---------------------------------- \\
@@ -12,7 +12,7 @@ $condensed-table-cell-height: $padding * 2;
 
 .table {
   display: grid;
-  margin: -1px 0 calc(#{$padding} - 1px) 0;
+  margin: -1px 0 calc(#{$padding-md} - 1px) 0;
   @extend %p;
   line-height: 1;
   background-color: #fff;
@@ -22,7 +22,7 @@ $condensed-table-cell-height: $padding * 2;
 
   th,
   td {
-    padding: $half-padding;
+    padding: $padding-sm;
     vertical-align: middle;
   }
 
@@ -71,7 +71,7 @@ $condensed-table-cell-height: $padding * 2;
   display: grid;
   grid-auto-flow: column;
   justify-content: end;
-  grid-gap: $half-padding;
-  margin: $half-padding * -1;
-  padding-right: $half-padding;
+  grid-gap: $padding-sm;
+  margin: $padding-sm * -1;
+  padding-right: $padding-sm;
 }
