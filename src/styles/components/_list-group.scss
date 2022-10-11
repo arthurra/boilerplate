@@ -58,7 +58,7 @@ $list-group-item-badge-width: $list-group-item-height;
   }
 
   &:hover {
-    background-color: lighten($lighter-gray, 2%);
+    background-color: lighten($gray-100, 2%);
   }
 }
 

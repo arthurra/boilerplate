@@ -2,13 +2,13 @@
 //              COLORS                \\
 // ---------------------------------- \\
 
-$black: #37474F;
-$darker-gray: #5A6779;
-$dark-gray: #78909C;
-$gray: #CFD8DC;
-$light-gray: #EAECEF;
-$lighter-gray: #F5F5F5;
-$near-white: #FCFCFC;
+$gray-100: #fafcfc;
+$gray-200: #c4c9cb;
+$gray-300: #9aa2a9;
+$gray-400: #6F7281;
+$gray-500: #53555c;
+$gray-600: #363639;
+$gray-700: #23272e;
 
 $sg-pink: #FF7A67;
 $sg-fuchsia: #CC74B7;
@@ -30,16 +30,16 @@ $color-info: $sg-blue;
 $color-primary: $sg-navy;
 $color-secondary: $sg-blue;
 
-$input-background-color: $near-white;
-$nav-background-color: lighten($lighter-gray, 2%);
+$input-background-color: $gray-100;
+$nav-background-color: lighten($gray-100, 2%);
 
 
 // ---------------------------------- \\
 //             TYPOGRAPHY             \\
 // ---------------------------------- \\
 
-$text-color: $darker-gray;
-$light-text-color: $dark-gray;
+$text-color: $gray-500;
+$light-text-color: $gray-400;
 $link-color: $color-secondary;
 
 $base-font-size: 16px;
@@ -64,9 +64,9 @@ $padding: 1rem;
 $half-padding: $padding / 2;
 $quarter-padding: $half-padding / 2;
 
-$dark-border: 2px solid $dark-gray;
-$border: 1px solid $gray;
-$light-border: 1px solid $light-gray;
+$dark-border: 2px solid $gray-400;
+$border: 1px solid $gray-200;
+$light-border: 1px solid $gray-200;
 $border-radius: 2px;
 
 $box-shadow: 0 1px 2px rgba(0,0,0,0.1);

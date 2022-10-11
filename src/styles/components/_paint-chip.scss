@@ -62,28 +62,28 @@
     background-color: $color-info;
   }
 
-  .paint-chip--lighter-gray & {
-    background-color: $lighter-gray;
+  .paint-chip--gray-100 & {
+    background-color: $gray-100;
   }
 
-  .paint-chip--light-gray & {
-    background-color: $light-gray;
+  .paint-chip--gray-200 & {
+    background-color: $gray-200;
   }
 
-  .paint-chip--gray & {
-    background-color: $gray;
+  .paint-chip--gray-300 & {
+    background-color: $gray-300;
   }
 
-  .paint-chip--dark-gray & {
-    background-color: $dark-gray;
+  .paint-chip--gray-400 & {
+    background-color: $gray-400;
   }
 
-  .paint-chip--darker-gray & {
-    background-color: $darker-gray;
+  .paint-chip--gray-500 & {
+    background-color: $gray-500;
   }
 
-  .paint-chip--black & {
-    background-color: $black;
+  .paint-chip--gray-600 & {
+    background-color: $gray-600;
   }
 }
 

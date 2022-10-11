@@ -29,8 +29,8 @@ $condensed-table-cell-height: $padding * 2;
   th {
     height: $table-cell-height;
     text-align: left;
-    color: $black;
-    background-color: $lighter-gray;
+    color: $gray-600;
+    background-color: $gray-100;
     border-bottom: $border;
   }
 
@@ -43,12 +43,12 @@ $condensed-table-cell-height: $padding * 2;
   }
 
   tr:hover td {
-    background-color: lighten($lighter-gray, 2%);
+    background-color: lighten($gray-100, 2%);
   }
 
   &--striped {
     tr:nth-of-type(even) td {
-      background-color: lighten($lighter-gray, 1.25%)
+      background-color: lighten($gray-100, 1.25%)
     }
 
     tr:nth-of-type(odd):hover td {

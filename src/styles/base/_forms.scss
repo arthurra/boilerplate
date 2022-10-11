@@ -254,7 +254,7 @@ $help-text-height: $label-height;
   &.disabled,
   &[disabled] {
     color: $light-text-color;
-    background-color: $lighter-gray;
+    background-color: $gray-100;
     cursor: not-allowed;
 
     &:hover {
