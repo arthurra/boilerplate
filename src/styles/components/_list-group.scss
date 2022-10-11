@@ -48,7 +48,7 @@ $list-group-item-badge-width: $list-group-item-height;
 }
 
 .list-group__item {
-  font: $p;
+  @extend %p;
   padding: calc(#{$list-group-item-padding} - 1px) 1rem calc(#{$list-group-item-padding} + 1px);
   transition: all $transition-duration $smooth-ease;
 

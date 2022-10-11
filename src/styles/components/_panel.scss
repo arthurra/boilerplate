@@ -36,7 +36,7 @@
 %panel {
   margin-top: -1px;
   margin-bottom: -1px;
-  font: $p;
+  @extend %p;
   border: $border;
   border-radius: $border-radius;
   box-shadow: $box-shadow;

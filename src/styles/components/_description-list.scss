@@ -19,9 +19,9 @@
 }
 
 .description-list__label {
-  font: $h5;
+  @extend %h5;
 }
 
 .description-list__content {
-  font: $p;
+  @extend %p;
 }

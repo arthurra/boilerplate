@@ -214,7 +214,7 @@ $help-text-height: $label-height;
   max-width: 100%;
   padding: 0 $half-padding;
   line-height: $input-height;
-  font: $p;
+  @extend %p;
   color: $text-color;
   background-color: $input-background-color;
   border: $border;
@@ -306,7 +306,7 @@ $help-text-height: $label-height;
 
 .form-group__help-block {
   display: inline-block;
-  font: $h6;
+  @extend %h6;
   line-height: $help-text-height;
   color: $text-color-light;
 

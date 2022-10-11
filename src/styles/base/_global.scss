@@ -1,10 +1,15 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
-  font: $p;
   font-size: $base-font-size;
+}
+
+body {
+  @extend %p;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -12,6 +17,7 @@ html {
   font-variant-alternates: styleset(ss01) character-variant(cv08);
   font-variant-numeric: diagonal-fractions;
   font-kerning: normal;
+  -moz-font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   font-feature-settings: "calt" 1, "tnum" 0, "frac" 1, "case" 1, "ss01" 1, "cv08" 1, "kern" 1, "liga" 1;
   color: $text-color;
 }
@@ -46,7 +52,7 @@ a {
 
 label {
   display: inline-block;
-  font: $label;
+  @extend %label;
   letter-spacing: 0.01em;
 }
 
@@ -65,7 +71,7 @@ ul {
 }
 
 li {
-  font: $p;
+  @extend %p;
 }
 
 section {

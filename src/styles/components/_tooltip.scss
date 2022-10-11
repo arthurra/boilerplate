@@ -7,7 +7,7 @@
     top: ($quarter-padding * -1);
     left: 50%;
     content: attr(aria-label);
-    font: $label;
+    @extend %label;
     letter-spacing: 0.01em;
     line-height: 1;
     white-space: nowrap;

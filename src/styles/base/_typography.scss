@@ -1,50 +1,112 @@
 h1, h2, h3, h4, h5, h6 {
-  color: $gray-600;
+  color: $title-color;
+}
+
+%h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.02em;
 }
 
 h1 {
-  font: $h1;
-  margin-bottom: $padding;
+  @extend %h1;
   padding-top: $padding * 3;
-  letter-spacing: 0.01em;
+  padding-bottom: $padding;
+}
+
+%h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.02em;
 }
 
 h2 {
-  font: $h2;
-  margin-bottom: $padding;
+  @extend %h2;
   padding-top: $padding * 3.5;
-  letter-spacing: -0.01em;
+  padding-bottom: $padding;
+}
+
+%h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: $font-family-title;
+  letter-spacing: 0.02em;
 }
 
 h3 {
-  font: $h3;
-  margin-bottom: $padding;
-  padding-top: $padding * 2;
-  letter-spacing: 0.02em;
+  @extend %h3;
+  padding-top: $padding * 3;
+  padding-bottom: $padding;
+}
+
+%h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: $font-family-text;
 }
 
 h4 {
-  font: $h4;
-  margin-top: -1px;
-  margin-bottom: $padding * 1.5;
-  padding-top: $padding * 1.5;
+  @extend %h4;
+  padding-top: $padding * 2;
+  padding-bottom: $padding * 1;
 }
 
-h5 {
-  font: $h5;
-  margin-bottom: $half-padding;
-  padding-top: $padding;
-  letter-spacing: 0.02em;
-}
-
-h6 {
-  font: $h6;
-  margin-bottom: $half-padding;
-  padding-top: 1rem;
+%h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-text;
   letter-spacing: 0.01em;
 }
 
+h5 {
+  @extend %h5;
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+%h6 {
+  // font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-text;
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  @extend %h6;
+  padding-top: 1rem;
+  padding-bottom: $padding;
+}
+
+%p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $font-family-text;
+}
+
 p {
-  font: $p;
-  margin-bottom: $padding;
+  @extend %p;
+  padding-bottom: $padding;
+}
+
+%label {
+  @extend %h5;
+  font-weight: 500;
+}
+
+label {
+  @extend %label;
+}
+
+small {
+  font-size: 87.5%;
 }

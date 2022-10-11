@@ -65,13 +65,23 @@ table {
   border-spacing: 0;
 }
 
-* {
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-extrabold-webfont.woff2") format("woff2"), url("../fonts/gilroy-extrabold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+}
+
+body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -118,7 +128,6 @@ a:hover {
 
 label {
   display: inline-block;
-  font: normal normal 500 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -134,10 +143,6 @@ ol {
 ul {
   list-style-type: disc;
   margin-bottom: 1rem;
-}
-
-li {
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -167,50 +172,99 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font: normal normal 700 1.875rem/3.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.02em;
+}
+
+h1 {
   padding-top: 3rem;
-  letter-spacing: 0.01em;
+  padding-bottom: 1rem;
 }
 
 h2 {
-  font: normal normal 400 1.25rem/3rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.02em;
+}
+
+h2 {
   padding-top: 3.5rem;
-  letter-spacing: -0.01em;
+  padding-bottom: 1rem;
 }
 
 h3 {
-  font: normal normal 700 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1rem;
-  padding-top: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.02em;
+}
+
+h3 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
-  font: normal normal 400 1rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: -1px;
-  margin-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-h5 {
-  font: normal normal 700 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 0.5rem;
-  padding-top: 1rem;
-  letter-spacing: 0.02em;
+h4 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
-h6 {
-  font: italic normal 400 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 0.5rem;
-  padding-top: 1rem;
+.description-list__label, .has-tooltip:before, label, h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.01em;
 }
 
+h5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.paint-chip__values, .form-group__help-block, h6 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .panel, .table, .form-group__input, .button, p, body, li {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 p {
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.has-tooltip:before, label {
+  font-weight: 500;
+}
+
+small {
+  font-size: 87.5%;
 }
 
 .button {
@@ -220,7 +274,6 @@ p {
   position: relative;
   height: 2rem;
   padding: 0 1rem;
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   color: #fff;
   background-color: #35247C;
@@ -499,7 +552,6 @@ p {
   max-width: 100%;
   padding: 0 0.5rem;
   line-height: 2rem;
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #6F7281;
   background-color: #fafcfc;
   border: 1px solid #c4c9cb;
@@ -579,7 +631,6 @@ p {
 
 .form-group__help-block {
   display: inline-block;
-  font: italic normal 400 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   color: #9aa2a9;
 }
@@ -628,7 +679,6 @@ p {
 .table {
   display: grid;
   margin: -1px 0 calc(1rem - 1px) 0;
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   background-color: #fff;
   border: 1px solid #c4c9cb;
@@ -694,7 +744,6 @@ p {
   top: -0.25rem;
   left: 50%;
   content: attr(aria-label);
-  font: normal normal 500 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 0.01em;
   line-height: 1;
   white-space: nowrap;
@@ -756,7 +805,6 @@ p {
 .paint-chip, .panel {
   margin-top: -1px;
   margin-bottom: -1px;
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #c4c9cb;
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -821,7 +869,6 @@ p {
 }
 
 .list-group__item {
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: calc(1rem - 1px) 1rem calc(1rem + 1px);
   transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -865,14 +912,6 @@ p {
 
 .description-list {
   margin-bottom: 1rem;
-}
-
-.description-list__label {
-  font: normal normal 700 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.description-list__content {
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .paint-chip {
@@ -939,12 +978,7 @@ p {
   background-color: #363639;
 }
 
-.paint-chip__title {
-  font: normal normal 400 0.875rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .paint-chip__values {
-  font: italic normal 400 0.75rem/1.5rem "Inter var alt", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #9aa2a9;
 }
 
