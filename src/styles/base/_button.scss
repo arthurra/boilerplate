@@ -2,8 +2,9 @@
 //             VARIABLES              \\
 // ---------------------------------- \\
 
-$button-height: $padding-md * 2;
+$button-height: $input-height;
 $small-button-height: $button-height * 0.75;
+$button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
 
 // ---------------------------------- \\
@@ -11,36 +12,47 @@ $small-button-height: $button-height * 0.75;
 // ---------------------------------- \\
 
 .button {
+  @extend %p;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: $padding-sm;
   position: relative;
-  height: $button-height;
-  padding: 0 $padding-md;
-  @extend %p;
-  line-height: 1;
-  color: #fff;
-  background-color: $color-secondary;
-  border: 1px solid $color-secondary;
+  min-height: $button-height;
+  padding: $padding-sm $padding-md;
+  color: $text-color;
+  background-color: $gray-100;
+  border: $border;
   border-radius: $border-radius;
   cursor: pointer;
-  box-shadow: $box-shadow;
   transition: all $transition-duration $transition-timing-function;
-  // @include button-gradient($color-secondary, $color-primary)
 
   &--hover,
   &:hover,
-  &:focus {
+  &:focus{
+    color: $color-primary;
     border-color: $color-primary;
-    box-shadow: $box-shadow-dark, 0 0 0 1px #fff inset;
+  }
+  
+  &--hover,
+  &:hover {
+    background-color: $color-primary-light;
+    box-shadow: $button-box-shadow-base;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+                $button-box-shadow-base;
     outline: none;
   }
 
   &--pressed,
   &:active {
+    color: #fff;
     background-color: $color-primary;
     border-color: $color-primary;
-    box-shadow: 0 0 0 2px #fff inset;
+    box-shadow: $button-box-shadow-base;
+    translate: 0 2px;
   }
 
   &.disabled,
@@ -50,51 +62,148 @@ $small-button-height: $button-height * 0.75;
     border: $border !important;
     cursor: not-allowed !important;
     box-shadow: none !important;
+    opacity: 0.65;
   }
 
-  &--confirm {
-    background-color: $color-success;
-    border-color: $color-success;
+  // ---------------------------------- \\
+  //             MODIFIERS              \\
+  // ---------------------------------- \\
 
-    &:hover,
+  &--primary {
+    color: $color-primary;
+    background-color: $color-primary-light;
+    border-color: $color-primary;
+
     &:focus {
-      border-color: darken($color-success, 10%);
+      color: $color-primary;
+      background-color: #fff;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+                  $button-box-shadow-base;
+    }
+    
+    &:hover {
+      color: #fff;
+      border-color: $color-primary;
+      background-color: $color-primary;
     }
 
     &:active {
-      background-color: darken($color-success, 10%);
+      box-shadow: $button-box-shadow-base;
+    }
+  }
+
+  &--secondary {
+    color: $color-secondary;
+    background-color: $color-secondary-light;
+    border-color: $color-secondary;
+
+    &:focus {
+      color: $color-secondary;
+      background-color: #fff;
+      border-color: $color-secondary;
+      box-shadow: 0 0 0 ($border-width * 2) $color-secondary-light,
+                  $button-box-shadow-base;
+    }
+    
+    &:hover {
+      color: #fff;
+      border-color: $color-secondary;
+      background-color: $color-secondary;
+    }
+
+    &:active {
+      box-shadow: $button-box-shadow-base;
+    }
+  }
+
+  &--confirm,
+  &--success {
+    color: $color-success;
+    background-color: $color-success-light;
+    border-color: $color-success;
+
+    &:focus {
+      color: $color-success;
+      background-color: #fff;
+      border-color: $color-success;
+      box-shadow: 0 0 0 ($border-width * 2) $color-success-light,
+                  $button-box-shadow-base;
+    }
+    
+    &:hover {
+      color: #fff;
+      border-color: $color-success;
+      background-color: $color-success;
+    }
+
+    &:active {
+      box-shadow: $button-box-shadow-base;
+    }
+  }
+
+  &--warning {
+    color: $color-warning;
+    background-color: $color-warning-light;
+    border-color: $color-warning;
+
+    &:focus {
+      color: $color-warning;
+      background-color: #fff;
+      border-color: $color-warning;
+      box-shadow: 0 0 0 ($border-width * 2) $color-warning-light,
+                  $button-box-shadow-base;
+    }
+    
+    &:hover {
+      color: #fff;
+      border-color: $color-warning;
+      background-color: $color-warning;
+    }
+
+    &:active {
+      box-shadow: $button-box-shadow-base;
     }
   }
 
   &--danger {
-    background-color: $color-danger;
+    color: $color-danger;
+    background-color: $color-danger-light;
     border-color: $color-danger;
 
-    &:hover,
     &:focus {
-      border-color: darken($color-danger, 10%);
+      color: $color-danger;
+      background-color: #fff;
+      border-color: $color-danger;
+      box-shadow: 0 0 0 ($border-width * 2) $color-danger-light,
+                  $button-box-shadow-base;
+    }
+    
+    &:hover {
+      color: #fff;
+      border-color: $color-danger;
+      background-color: $color-danger;
     }
 
     &:active {
-      background-color: darken($color-danger, 10%);
+      box-shadow: $button-box-shadow-base;
     }
   }
 
-  &--small {
-    height: $small-button-height;
-    padding: 0 $padding-sm;
-  }
-
   &--outline {
-    color: $color-secondary;
     background-color: #fff;
-    // @include button-gradient(#fff, $color-primary);
 
-    &.button--hover,
-    &:hover,
     &:focus {
-      color: #fff;
-      background-color: $color-secondary;
+      color: $color-primary;
+      background-color: #fff;
+      border-color: $color-primary;
+    }
+    
+    &.button--hover,
+    &:hover {
+      color: $color-primary;
+      background-color: $color-primary-light;
+      border-color: $color-primary;
     }
 
     &.button--pressed,
@@ -103,90 +212,255 @@ $small-button-height: $button-height * 0.75;
       background-color: $color-primary;
     }
 
-    &.button--confirm {
-      color: $color-success;
+    &.button--primary {
+      color: $color-primary;
 
-      &:hover,
       &:focus {
+        color: $color-primary;
+        background-color: #fff;
+        border-color: $color-primary;
+      }
+
+      &:hover {
         color: #fff;
-        background-color: $color-success;
-        border-color: darken($color-success, 10%);
+        background-color: $color-primary;
+        border-color: $color-primary;
       }
 
       &:active {
-        background-color: darken($color-success, 10%);
+        background-color: $color-primary;
+      }
+    }
+
+    &.button--secondary {
+      color: $color-secondary;
+
+      &:focus {
+        color: $color-secondary;
+        background-color: #fff;
+        border-color: $color-secondary;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+      }
+
+      &:active {
+        background-color: $color-secondary;
+      }
+    }
+
+    &.button--confirm,
+    &.button--success {
+      color: $color-success;
+
+      &:focus {
+        color: $color-success;
+        background-color: #fff;
+        border-color: $color-success;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: $color-success;
+        border-color: $color-success;
+      }
+
+      &:active {
+        background-color: $color-success;
+      }
+    }
+
+    &.button--warning {
+      color: $color-warning;
+
+      &:focus {
+        color: $color-warning;
+        background-color: #fff;
+        border-color: $color-warning;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: $color-warning;
+        border-color: $color-warning;
+      }
+
+      &:active {
+        background-color: $color-warning;
       }
     }
 
     &.button--danger {
       color: $color-danger;
 
-      &:hover,
       &:focus {
+        color: $color-danger;
+        background-color: #fff;
+        border-color: $color-danger;
+      }
+
+      &:hover {
         color: #fff;
         background-color: $color-danger;
-        border-color: darken($color-danger, 10%);
+        border-color: $color-danger;
       }
 
       &:active {
-        background-color: darken($color-danger, 10%);
+        background-color: $color-danger;
       }
     }
   }
 
   &--link {
-    color: $color-secondary;
+    color: $text-color;
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
-    // @include button-gradient(transparent, $color-primary);
+
+    &:focus {
+      color: $color-primary;
+      background-color: #fff;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+                $button-box-shadow-base;
+    }
 
     &.button--hover,
-    &:hover,
-    &:focus {
-      color: #fff;
-      background-color: $color-secondary;
+    &:hover {
+      color: $color-primary;
+      background-color: $color-primary-light;
       border-color: $color-primary;
-      box-shadow: $box-shadow-dark, 0 0 0 1px #fff inset;
+      box-shadow: $button-box-shadow-base;
+    }
+
+    &:focus:hover {
+      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+                  $button-box-shadow-base;
     }
 
     &.button--pressed,
     &:active {
       color: #fff;
       background-color: $color-primary;
-      border-color: $color-primary;
-      box-shadow: 0 0 0 2px #fff inset;
+      box-shadow: $button-box-shadow-base;
     }
 
-    &.button--confirm {
+    &.button--primary {
+      color: $color-primary;
+
+      &:focus {
+        color: $color-primary;
+        background-color: #fff;
+        box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+                  $button-box-shadow-base;
+      }
+      
+      &:hover {
+        color: #fff;
+        background-color: $color-primary;
+        border-color: $color-primary;
+      }
+  
+      &:active {
+        background-color: $color-primary;
+      }
+    }
+
+    &.button--secondary {
+      color: $color-secondary;
+
+      &:focus {
+        color: $color-secondary;
+        background-color: #fff;
+        box-shadow: 0 0 0 ($border-width * 2) $color-secondary-light,
+                  $button-box-shadow-base;
+      }
+      
+      &:hover {
+        color: #fff;
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+      }
+  
+      &:active {
+        background-color: $color-secondary;
+      }
+    }
+
+    &.button--confirm,
+    &.button--success {
       color: $color-success;
 
-      &:hover,
       &:focus {
+        color: $color-success;
+        background-color: #fff;
+        border-color: $color-success;
+        box-shadow: 0 0 0 ($border-width * 2) $color-success-light,
+                  $button-box-shadow-base;
+      }
+      
+      &:hover {
         color: #fff;
         background-color: $color-success;
-        border-color: darken($color-success, 10%);
+        border-color: $color-success;
       }
-
+  
       &:active {
-        background-color: darken($color-success, 10%);
+        background-color: $color-success;
+      }
+    }
+
+    &.button--warning {
+      color: $color-warning;
+
+      &:focus {
+        color: $color-warning;
+        background-color: #fff;
+        border-color: $color-warning;
+        box-shadow: 0 0 0 ($border-width * 2) $color-warning-light,
+                  $button-box-shadow-base;
+      }
+      
+      &:hover {
+        color: #fff;
+        background-color: $color-warning;
+        border-color: $color-warning;
+      }
+  
+      &:active {
+        background-color: $color-warning;
       }
     }
 
     &.button--danger {
       color: $color-danger;
 
-      &:hover,
       &:focus {
+        color: $color-danger;
+        background-color: #fff;
+        border-color: $color-danger;
+        box-shadow: 0 0 0 ($border-width * 2) $color-danger-light,
+                  $button-box-shadow-base;
+      }
+      
+      &:hover {
         color: #fff;
         background-color: $color-danger;
-        border-color: darken($color-danger, 10%);
+        border-color: $color-danger;
       }
-
+  
       &:active {
-        background-color: darken($color-danger, 10%);
+        background-color: $color-danger;
       }
     }
+  }
+
+  &--sm {
+    min-height: $small-button-height;
+    padding: 0 $padding-sm;
   }
 }
 
