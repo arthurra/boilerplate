@@ -1,0 +1,218 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<div class="form-group">
+    <label for="input" class="form-group__label">Text Input</label>
+    <input type="text" name="text-input" id="input" class="form-group__input" />
+    <span class="form-group__help-text">
+        <i class="far fa-info-circle"></i>
+        Text input help text
+    </span>
+</div>
+
+<div class="form-group form-group--has-icon-left">
+    <label for="msrp" class="form-group__label">MSRP</label>
+    <input type="number" step="any" value="" id="msrp" class="form-group__input">
+    <span class="form-group__input-icon form-group__input-icon--left">
+        <i class="far fa-dollar-sign"></i>
+    </span>
+</div>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.form-group {
+  display: grid;
+  grid-template-rows: 
+      auto 
+      $input-height 
+      auto;
+  grid-template-columns: $input-icon-width 1fr $input-icon-width;
+  grid-template-areas:
+      "label      label       label"
+      "left-icon  input       right-icon"
+      "help-text  help-text   help-text";
+  align-content: start;
+  position: relative;
+  margin-bottom: $padding-lg;
+
+  &--inline {
+    display: inline-grid;
+  }
+
+  &--sm {
+    width: 8ch;
+  }
+
+  &--md {
+    width: 16ch;
+  }
+
+  &--lg {
+    width: 24ch;
+  }
+
+  &--xl {
+    width: 32ch;
+  }
+
+  &--xxl {
+    width: 40ch;
+  }
+}
+
+/* LABEL */
+
+.form-group__label {
+  grid-area: label;
+}
+
+/* INPUT */
+
+.form-group__input {
+  @extend %p;
+  grid-area: left-icon / left-icon / right-icon / right-icon;
+  appearance: none;
+  display: block;
+  max-width: 100%;
+  padding: 0 $padding-sm;
+  line-height: $input-height;
+  color: $text-color;
+  background-color: $input-background-color;
+  border: $border;
+  border-radius: $border-radius;
+  transition: all $transition-duration $transition-timing-function;
+
+  &::placeholder {
+    color: $text-color-light;
+    opacity: 0.75;
+  }
+
+  &:hover {
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    background-color: #fff;
+    border-color: $color-primary;
+    box-shadow: $button-box-shadow-base;
+    outline: none;
+    // z-index: 2;
+  }
+
+  &.disabled,
+  &[disabled] {
+    color: $text-color-dark;
+    background-color: $gray-200;
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &::placeholder {
+      color: $title-color;
+      opacity: 1;
+    }
+
+    &:hover {
+      border: $border;
+    }
+  }
+
+  &[required]:valid {
+    background-color: #fff;
+  }
+
+  &[readonly] {
+    padding: 0;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &[list]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  .form-group--has-icon-left & {
+    padding-left: $input-icon-width;
+  }
+
+  .form-group--has-icon-right & {
+    padding-right: $input-icon-width;
+  }
+}
+
+/* ICONS */
+
+.form-group__input-icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+
+  &--left {
+    grid-area: left-icon;
+  }
+
+  &--right {
+    grid-area: right-icon;
+  }
+
+  &--primary, 
+  &--required {
+    color: $color-primary;
+  }
+
+  &--secondary {
+    color: $color-secondary;
+  }
+
+  &--success {
+    color: $color-success;
+  }
+
+  &--warning {
+    color: $color-warning;
+  }
+
+  &--danger {
+    color: $color-danger;
+  }
+
+  &--info {
+    color: $color-info;
+  }
+}
+
+
+
+/* HELP TEXT */
+
+.form-group__help-text {
+  @extend %h6;
+  grid-area: help-text;
+  display: inline-block;
+  padding-top: $padding-sm;
+  color: $text-color;
+
+  &--success {
+    color: $color-success;
+  }
+
+  &--warning {
+    color: $color-warning;
+  }
+
+  &--danger {
+    color: $color-danger;
+  }
+
+  &--info {
+    color: $color-info;
+  }
+}

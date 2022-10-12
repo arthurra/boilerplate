@@ -1,14 +1,4 @@
 // ---------------------------------- \\
-//             VARIABLES              \\
-// ---------------------------------- \\
-
-$input-height: $padding-md * 2;
-$icon-width: $input-height;
-$label-height: $input-height * 0.75;
-$help-text-height: $label-height;
-
-
-// ---------------------------------- \\
 //              LAYOUT                \\
 // ---------------------------------- \\
 
@@ -46,13 +36,13 @@ $help-text-height: $label-height;
   grid-area: input-right-icon;
 }
 
-.form-group__help-block {
+.form-group__help-text {
   grid-area: help-text;
 }
 
 .form-group--checkbox,
 .form-group--radio {
-  grid-template-rows: ($label-height - $padding-sm) $input-height;
+  grid-template-rows: ($input-label-height - $padding-sm) $input-height;
   grid-template-columns: auto;
   grid-auto-rows: $input-height;
   grid-template-areas:
@@ -119,7 +109,7 @@ $help-text-height: $label-height;
     grid-template-rows:
       $input-height / 2
       $input-height * 2
-      $label-height
+      $input-label-height
       $input-height / 2;
     grid-template-areas:
       "."
@@ -304,7 +294,7 @@ $help-text-height: $label-height;
   }
 }
 
-.form-group__help-block {
+.form-group__help-text {
   display: inline-block;
   @extend %h6;
   line-height: $help-text-height;

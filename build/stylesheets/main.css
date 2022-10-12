@@ -237,7 +237,7 @@ h5 {
   padding-bottom: 1rem;
 }
 
-.paint-chip__values, .form-group__help-block, h6 {
+.paint-chip__values, .form-group__help-text, h6 {
   font-style: italic;
   font-weight: 500;
   font-size: 1rem;
@@ -619,276 +619,200 @@ small {
   margin-left: 0.5rem;
 }
 
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="form-group">
+    <label for="input" class="form-group__label">Text Input</label>
+    <input type="text" name="text-input" id="input" class="form-group__input" />
+    <span class="form-group__help-text">
+        <i class="far fa-info-circle"></i>
+        Text input help text
+    </span>
+</div>
+
+<div class="form-group form-group--has-icon-left">
+    <label for="msrp" class="form-group__label">MSRP</label>
+    <input type="number" step="any" value="" id="msrp" class="form-group__input">
+    <span class="form-group__input-icon form-group__input-icon--left">
+        <i class="far fa-dollar-sign"></i>
+    </span>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
 .form-group {
   display: grid;
-  grid-template-rows: auto 2rem auto;
-  grid-template-columns: 2rem 1fr 2rem;
-  grid-template-areas: "label label label" "input-left-icon input input-right-icon" "help-text help-text help-text";
+  grid-template-rows: auto 3rem auto;
+  grid-template-columns: 3rem 1fr 3rem;
+  grid-template-areas: "label      label       label" "left-icon  input       right-icon" "help-text  help-text   help-text";
   align-content: start;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.form-group--inline {
+  display: inline-grid;
+}
+.form-group--sm {
+  width: 8ch;
+}
+.form-group--md {
+  width: 16ch;
+}
+.form-group--lg {
+  width: 24ch;
+}
+.form-group--xl {
+  width: 32ch;
+}
+.form-group--xxl {
+  width: 40ch;
 }
 
+/* LABEL */
 .form-group__label {
   grid-area: label;
 }
 
+/* INPUT */
 .form-group__input {
-  grid-area: input-left-icon/input-left-icon/input-right-icon/input-right-icon;
-}
-
-.form-group__input-icon {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-}
-
-.form-group__input-icon--left {
-  grid-area: input-left-icon;
-}
-
-.form-group__input-icon--right {
-  grid-area: input-right-icon;
-}
-
-.form-group__help-block {
-  grid-area: help-text;
-}
-
-.form-group--checkbox,
-.form-group--radio {
-  grid-template-rows: 1rem 2rem;
-  grid-template-columns: auto;
-  grid-auto-rows: 2rem;
-  grid-template-areas: "label" "inputs";
-  grid-row-gap: 0.5rem;
-  justify-content: start;
-}
-.form-group--checkbox .form-group__input,
-.form-group--radio .form-group__input {
-  grid-area: auto;
-  display: grid;
-  grid-template-rows: 2rem;
-  grid-template-columns: 2rem auto;
-  grid-template-areas: "input label";
-  align-items: center;
-}
-
-.form-group__checkbox,
-.form-group__radio {
-  grid-area: input;
-  justify-self: center;
-}
-
-.form-group__checkbox-label,
-.form-group__radio-label {
-  grid-area: label;
-}
-
-.form-group--textarea {
-  grid-template-rows: auto 2rem minmax(4.5rem, auto) auto;
-  grid-template-areas: "label           label     label" "input-left-icon .         input-right-icon" "input           input     input" "help-text       help-text help-text";
-}
-.form-group--textarea .form-group__input {
-  grid-row: 2/-2;
-  grid-column: 1/-1;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.form-group--file {
-  grid-template-rows: auto auto auto;
-  grid-template-columns: auto;
-  grid-template-areas: "label" "input" "help-text";
-}
-.form-group--file .form-group__input {
-  grid-area: input;
-  display: grid;
-  grid-template-rows: 1rem 4rem 1.5rem 1rem;
-  grid-template-areas: "." "icon" "text" ".";
-  justify-items: center;
-  align-items: center;
-}
-
-.form-group__file-icon {
-  grid-area: icon;
-}
-
-.form-group__file-label {
-  grid-area: text;
-}
-
-.form-group--select:before, .form-group--select:after {
-  grid-area: input-right-icon;
-  align-self: center;
-  justify-self: center;
-}
-
-.form-group {
-  position: relative;
-  margin-bottom: 1.5rem;
-}
-.form-group--info .form-group__input {
-  border-color: #1861C8;
-  background-color: #cddff9;
-}
-.form-group--info .form-group__input-icon {
-  color: #1861C8;
-}
-.form-group--warning .form-group__input {
-  border-color: #FCA42D;
-  background-color: #fff5e7;
-}
-.form-group--warning .form-group__input-icon {
-  color: #FCA42D;
-}
-.form-group--danger .form-group__input {
-  border-color: #da3e42;
-  background-color: white;
-}
-.form-group--danger .form-group__input-icon {
-  color: #da3e42;
-}
-.form-group--success .form-group__input {
-  border-color: #1a8a60;
-  background-color: #9dedcf;
-}
-.form-group--success .form-group__input-icon {
-  color: #1a8a60;
-}
-.form-group--disabled .form-group__input-icon {
-  color: #9aa2a9;
-}
-
-.form-group__input {
+  grid-area: left-icon/left-icon/right-icon/right-icon;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   display: block;
   max-width: 100%;
   padding: 0 0.5rem;
-  line-height: 2rem;
+  line-height: 3rem;
   color: #6F7281;
   background-color: #fafcfc;
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
-.form-group--checkbox .form-group__input, .form-group--radio .form-group__input {
-  padding: 0 0.5rem 0 0;
-}
-.form-group--file .form-group__input {
-  color: #9aa2a9;
-}
-.form-group--file .form-group__input:hover {
-  color: #1861C8;
-}
 .form-group__input::-webkit-input-placeholder {
   color: #9aa2a9;
+  opacity: 0.75;
 }
 .form-group__input::-moz-placeholder {
   color: #9aa2a9;
+  opacity: 0.75;
 }
 .form-group__input::-ms-input-placeholder {
   color: #9aa2a9;
+  opacity: 0.75;
 }
 .form-group__input::placeholder {
   color: #9aa2a9;
+  opacity: 0.75;
 }
-.form-group__input:hover, .form-group__input.form-group__input--hover {
-  border-color: #593fc7;
+.form-group__input:hover {
+  border-color: #6B52C7;
 }
-.form-group__input:focus, .form-group__input.form-group__input--focus {
+.form-group__input:focus {
   background-color: #fff;
-  border-color: #35247C;
-  box-shadow: 0 0 0 2px rgba(53, 36, 124, 0.5);
+  border-color: #6B52C7;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
   outline: none;
 }
 .form-group__input.disabled, .form-group__input[disabled] {
-  color: #9aa2a9;
-  background-color: #fafcfc;
+  color: #53555c;
+  background-color: #c4c9cb;
   cursor: not-allowed;
+  opacity: 0.5;
+}
+.form-group__input.disabled::-webkit-input-placeholder, .form-group__input[disabled]::-webkit-input-placeholder {
+  color: #363639;
+  opacity: 1;
+}
+.form-group__input.disabled::-moz-placeholder, .form-group__input[disabled]::-moz-placeholder {
+  color: #363639;
+  opacity: 1;
+}
+.form-group__input.disabled::-ms-input-placeholder, .form-group__input[disabled]::-ms-input-placeholder {
+  color: #363639;
+  opacity: 1;
+}
+.form-group__input.disabled::placeholder, .form-group__input[disabled]::placeholder {
+  color: #363639;
+  opacity: 1;
 }
 .form-group__input.disabled:hover, .form-group__input[disabled]:hover {
   border: 2px solid #c4c9cb;
 }
-.form-group__input.readonly, .form-group__input[readonly] {
-  background-color: transparent;
-  border: none;
+.form-group__input[required]:valid {
+  background-color: #fff;
 }
-.form-group__input.readonly:focus, .form-group__input[readonly]:focus {
+.form-group__input[readonly] {
+  padding: 0;
+  background-color: white;
+  border-color: transparent;
+  border-radius: 0;
   box-shadow: none;
 }
-.form-group__input--icon-l {
-  padding-left: 2rem;
+.form-group__input[list]::-webkit-calendar-picker-indicator {
+  display: none;
 }
-.form-group__input--icon-r {
-  padding-right: 2rem;
+.form-group--has-icon-left .form-group__input {
+  padding-left: 3rem;
 }
-.form-group__input--icon-lr {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.form-group--has-icon-right .form-group__input {
+  padding-right: 3rem;
 }
 
+/* ICONS */
 .form-group__input-icon {
-  font-size: 0.8em;
-  color: #9aa2a9;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.form-group__input-icon--left {
+  grid-area: left-icon;
+}
+.form-group__input-icon--right {
+  grid-area: right-icon;
+}
+.form-group__input-icon--primary, .form-group__input-icon--required {
+  color: #6B52C7;
+}
+.form-group__input-icon--secondary {
+  color: #35247C;
 }
 .form-group__input-icon--success {
   color: #1a8a60;
 }
+.form-group__input-icon--warning {
+  color: #FCA42D;
+}
 .form-group__input-icon--danger {
   color: #da3e42;
 }
-.form-group__input-icon--required {
+.form-group__input-icon--info {
   color: #1861C8;
-  font-size: 0.6em;
 }
 
-.form-group__help-block {
+/* HELP TEXT */
+.form-group__help-text {
+  grid-area: help-text;
   display: inline-block;
-  line-height: 1.5rem;
-  color: #9aa2a9;
+  padding-top: 0.5rem;
+  color: #6F7281;
 }
-.form-group__help-block--info {
-  color: #1861C8;
-}
-.form-group__help-block--success {
+.form-group__help-text--success {
   color: #1a8a60;
 }
-.form-group__help-block--danger {
+.form-group__help-text--warning {
+  color: #FCA42D;
+}
+.form-group__help-text--danger {
   color: #da3e42;
 }
-
-.form-group--select:before, .form-group--select:after {
-  content: "";
-  position: relative;
-  border-style: solid;
-  border-width: 0.4rem 0.25rem;
-  border-radius: 0.25rem;
-  transition: border-color 150ms cubic-bezier(0.65, 0, 0.35, 1);
-}
-.form-group--select:before {
-  top: 0.5rem;
-  border-color: #9aa2a9 transparent transparent transparent;
-}
-.form-group--select:after {
-  top: -0.5rem;
-  border-color: transparent transparent #9aa2a9 transparent;
-}
-
-.form-group--file .form-group__input {
-  margin: -1px 0;
-}
-
-.form-group__file {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.form-group__file-icon {
-  font-size: 4em;
-  line-height: 4rem;
+.form-group__help-text--info {
+  color: #1861C8;
 }
 
 .table {
