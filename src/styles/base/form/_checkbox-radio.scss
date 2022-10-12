@@ -71,7 +71,8 @@
 .form-group--radio .form-group__input:focus-within {
   background-color: white;
   border-color: $color-primary;
-  box-shadow: $button-box-shadow-base;
+  box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+              $button-box-shadow-base;
   outline: none;
 }
 
