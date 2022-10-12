@@ -79,12 +79,12 @@ $font-family-mono: "Roboto Mono";
 
 $padding-base: 1rem;
 
-$padding-xs: ($padding-base / 4);
-$padding-sm: ($padding-base / 2);
+$padding-xs: calc($padding-base / 4);
+$padding-sm: calc($padding-base / 2);
 $padding-md: $padding-base;
-$padding-lg: ($padding-base * 1.5);
-$padding-xl: ($padding-base * 2);
-$padding-xxl: ($padding-base * 2.5);
+$padding-lg: calc($padding-base * 1.5);
+$padding-xl: calc($padding-base * 2);
+$padding-xxl: calc($padding-base * 2.5);
 
 
 // ---------------------------------- \\
