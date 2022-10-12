@@ -815,6 +815,207 @@ small {
   color: #1861C8;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #363639;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h4 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.description-list__label, h5, .has-tooltip:before, label {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+h5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.paint-chip__values, h6, .form-group__help-text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .panel, .table, body, li, p, .button, .form-group__input {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+small {
+  font-size: 87.5%;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/* 
+<div class="form-group form-group--checkbox">
+    <label for="" class="form-group__label">Checkboxes</label>
+    <label for="sg-checkbox-1" class="form-group__input">
+        <input type="checkbox" name="checkboxes" id="sg-checkbox-1" class="form-group__checkbox">
+        <span class="form-group__checkbox-label">Option 1</span>
+    </label>
+    <label for="sg-checkbox-2" class="form-group__input">
+        <input type="checkbox" name="checkboxes" id="sg-checkbox-2" class="form-group__checkbox">
+        <span class="form-group__checkbox-label">Option 2</span>
+    </label>
+    <label for="sg-checkbox-3" class="form-group__input">
+        <input type="checkbox" name="checkboxes" id="sg-checkbox-3" class="form-group__checkbox">
+        <span class="form-group__checkbox-label">Option 3</span>
+    </label>
+</div>
+
+<div class="form-group form-group--radio">
+    <label for="" class="form-group__label">Radio Buttons</label>
+    <label for="sg-radio-1" class="form-group__input">
+        <input type="radio" name="radioes" id="sg-radio-1" class="form-group__radio">
+        <span class="form-group__radio-label">Option 1</span>
+    </label>
+    <label for="sg-radio-2" class="form-group__input">
+        <input type="radio" name="radioes" id="sg-radio-2" class="form-group__radio">
+        <span class="form-group__radio-label">Option 2</span>
+    </label>
+    <label for="sg-radio-3" class="form-group__input">
+        <input type="radio" name="radioes" id="sg-radio-3" class="form-group__radio">
+        <span class="form-group__radio-label">Option 3</span>
+    </label>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.form-group--checkbox,
+.form-group--radio {
+  grid-template-rows: auto 3rem;
+  grid-template-columns: auto;
+  grid-auto-rows: 3rem;
+  grid-template-areas: "label" "inputs";
+  grid-row-gap: 0.5rem;
+  justify-content: start;
+}
+
+.form-group--checkbox .form-group__input,
+.form-group--radio .form-group__input {
+  grid-area: auto;
+  display: grid;
+  grid-template-rows: 3rem;
+  grid-template-columns: 3rem auto;
+  grid-template-areas: "input label";
+  align-items: center;
+  padding: 0 0.5rem 0 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.form-group--checkbox .form-group__input:focus-within,
+.form-group--radio .form-group__input:focus-within {
+  background-color: white;
+  border-color: #6B52C7;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  outline: none;
+}
+
+.form-group--checkbox .form-group__input input {
+  justify-self: center;
+}
+
+.form-group__checkbox,
+.form-group__radio {
+  grid-area: input;
+  justify-self: center;
+}
+
+.form-group__checkbox-label,
+.form-group__radio-label {
+  grid-area: label;
+  line-height: 1.4;
+}
+
+.form-group--checkbox .form-group__label,
+.form-group--radio .form-group__label {
+  height: 1.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.form-group--checkbox .form-group__radio,
+.form-group--radio .form-group__radio {
+  margin: 0;
+}
+
+.form-group--checkbox .form-group__radio:focus,
+.form-group--radio .form-group__radio:focus {
+  outline: none;
+}
+
 .table {
   display: grid;
   margin: -1px 0 calc(1rem - 1px) 0;
