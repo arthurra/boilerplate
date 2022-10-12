@@ -443,7 +443,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         background-color: #fff;
         border-color: $color-danger;
         box-shadow: 0 0 0 ($border-width * 2) $color-danger-light,
-                  $button-box-shadow-base;
+                    $button-box-shadow-base;
       }
       
       &:hover {
