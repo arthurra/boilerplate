@@ -1,4 +1,5 @@
 @import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 .hidden {
   display: none;
 }
@@ -158,10 +159,11 @@ code {
   background-color: #fafcfc;
   padding: 0.125rem 0.25rem;
   border-radius: 0.25rem;
-  font-family: monospace;
+  font-family: "Roboto Mono", monospace;
   -webkit-font-feature-settings: normal;
           font-feature-settings: normal;
   font-size: 87.5%;
+  font-weight: 700;
   line-height: 1;
   white-space: pre;
   vertical-align: middle;
@@ -199,15 +201,15 @@ h2 {
 
 h3 {
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 h3 {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
   padding-bottom: 1rem;
 }
 
@@ -873,15 +875,15 @@ h2 {
 
 h3 {
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 h3 {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
   padding-bottom: 1rem;
 }
 

@@ -88,9 +88,10 @@ code {
   background-color: $gray-100;
   padding: calc($padding-xs / 2) $padding-xs;
   border-radius: $border-radius;
-  font-family: monospace;
+  font-family: $font-family-mono;
   font-feature-settings: normal;
   font-size: 87.5%;
+  font-weight: 700;
   line-height: 1;
   white-space: pre;
   vertical-align: middle;

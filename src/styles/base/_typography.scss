@@ -32,8 +32,8 @@ h2 {
 
 %h3 {
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: $font-family-title;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -41,7 +41,7 @@ h2 {
 
 h3 {
   @extend %h3;
-  padding-top: ($padding-base * 4);
+  padding-top: ($padding-base * 4.5);
   padding-bottom: $padding-base;
 }
 
