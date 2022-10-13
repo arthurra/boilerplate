@@ -2,7 +2,7 @@
 //              LAYOUT                \\
 // ---------------------------------- \\
 
-.panel {
+.card {
   display: grid;
   grid-template-areas:
     "header"
@@ -10,15 +10,15 @@
     "footer";
 }
 
-.panel__header {
+.card__header {
   grid-area: header;
 }
 
-.panel__body {
+.card__body {
   grid-area: body;
 }
 
-.panel__footer {
+.card__footer {
   grid-area: footer;
   display: grid;
   grid-auto-flow: column;
@@ -33,7 +33,7 @@
 //            PLACEHOLDER             \\
 // ---------------------------------- \\
 
-%panel {
+%card {
   margin-top: -1px;
   margin-bottom: -1px;
   @extend %p;
@@ -47,29 +47,29 @@
 //              DISPLAY               \\
 // ---------------------------------- \\
 
-.panel {
-  @extend %panel;
+.card {
+  @extend %card;
   margin-bottom: calc(#{$padding-md} - 1px);
 }
 
-.panel__header {
+.card__header {
   margin-bottom: -1px;
   padding: $padding-md;
   background-color: $gray-100;
   border-bottom: $border;
 }
 
-.panel__title {
+.card__title {
   margin: 0;
   padding: 0;
   line-height: 1.2;
 }
 
-.panel__body {
+.card__body {
   padding: ($padding-md * 1.5) $padding-md;
 }
 
-.panel__footer {
+.card__footer {
   margin-top: -1px;
   padding: $padding-sm $padding-md;
   background-color: $gray-100;

@@ -36,6 +36,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   
   &--hover,
   &:hover {
+    color: $color-primary-dark;
     background-color: $color-primary-light;
     box-shadow: $button-box-shadow-base;
   }
@@ -70,7 +71,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   // ---------------------------------- \\
 
   &--primary {
-    color: $color-primary;
+    color: $color-primary-dark;
     background-color: $color-primary-light;
     border-color: $color-primary;
 
@@ -84,7 +85,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     
     &:hover {
       color: #fff;
-      border-color: $color-primary;
+      border-color: $color-primary-dark;
       background-color: $color-primary;
     }
 
@@ -94,7 +95,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   }
 
   &--secondary {
-    color: $color-secondary;
+    color: $color-secondary-dark;
     background-color: $color-secondary-light;
     border-color: $color-secondary;
 
@@ -119,7 +120,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
   &--confirm,
   &--success {
-    color: $color-success;
+    color: $color-success-dark;
     background-color: $color-success-light;
     border-color: $color-success;
 
@@ -143,7 +144,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   }
 
   &--warning {
-    color: $color-warning;
+    color: $color-warning-dark;
     background-color: $color-warning-light;
     border-color: $color-warning;
 
@@ -167,7 +168,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   }
 
   &--danger {
-    color: $color-danger;
+    color: $color-danger-dark;
     background-color: $color-danger-light;
     border-color: $color-danger;
 
@@ -190,6 +191,30 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
   }
 
+  &--info {
+    color: $color-info-dark;
+    background-color: $color-info-light;
+    border-color: $color-info;
+
+    &:focus {
+      color: $color-info;
+      background-color: #fff;
+      border-color: $color-info;
+      box-shadow: 0 0 0 ($border-width * 2) $color-info-light,
+                  $button-box-shadow-base;
+    }
+    
+    &:hover {
+      color: #fff;
+      border-color: $color-info;
+      background-color: $color-info;
+    }
+
+    &:active {
+      box-shadow: $button-box-shadow-base;
+    }
+  }
+
   &--outline {
     background-color: #fff;
 
@@ -201,7 +226,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     
     &.button--hover,
     &:hover {
-      color: $color-primary;
+      color: $color-primary-dark;
       background-color: $color-primary-light;
       border-color: $color-primary;
     }
@@ -330,7 +355,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
     &.button--hover,
     &:hover {
-      color: $color-primary;
+      color: $color-primary-dark;
       background-color: $color-primary-light;
       border-color: $color-primary;
       box-shadow: $button-box-shadow-base;
@@ -462,8 +487,4 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     min-height: $small-button-height;
     padding: 0 $padding-sm;
   }
-}
-
-.button__icon-label {
-  margin-left: $padding-sm;
 }

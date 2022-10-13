@@ -32,7 +32,7 @@
 // ---------------------------------- \\
 
 .paint-chip {
-  @extend %panel;
+  @extend %card;
   margin-bottom: calc(#{$padding-md} - 1px);
   padding: $padding-md;
 }
