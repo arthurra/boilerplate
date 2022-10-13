@@ -156,8 +156,8 @@ section + section {
 
 code {
   border: 2px solid #c4c9cb;
-  background-color: #fafcfc;
-  padding: 0.125rem 0.25rem;
+  background-color: #fafafa;
+  padding: 0 0.25rem;
   border-radius: 0.25rem;
   font-family: "Roboto Mono", monospace;
   -webkit-font-feature-settings: normal;
@@ -277,7 +277,7 @@ small {
   min-height: 3rem;
   padding: 0.5rem 1rem;
   color: #6F7281;
-  background-color: #fafcfc;
+  background-color: #fafafa;
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
   cursor: pointer;
@@ -305,7 +305,7 @@ small {
 .button.disabled,
 .button [disabled] {
   color: #9aa2a9 !important;
-  background: #fafcfc !important;
+  background: #fafafa !important;
   border: 2px solid #c4c9cb !important;
   cursor: not-allowed !important;
   box-shadow: none !important;
@@ -687,7 +687,7 @@ small {
   padding: 0 0.5rem;
   line-height: 3rem;
   color: #6F7281;
-  background-color: #fafcfc;
+  background-color: #fafafa;
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
@@ -718,9 +718,11 @@ small {
   outline: none;
 }
 .form-group__input.disabled, .form-group__input[disabled] {
-  color: #53555c;
-  background-color: #c4c9cb;
-  cursor: not-allowed;
+  color: #9aa2a9 !important;
+  background: #fafafa !important;
+  border: 2px solid #c4c9cb !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
   opacity: 0.5;
 }
 .form-group__input.disabled::-webkit-input-placeholder, .form-group__input[disabled]::-webkit-input-placeholder {
@@ -1289,7 +1291,7 @@ small {
   padding: 0 6rem 0 1rem;
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
-  background-color: #fafcfc;
+  background-color: #fafafa;
 }
 
 .form-group--toggle .form-group__label:hover {
@@ -1335,7 +1337,7 @@ small {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
-  background-color: #fafcfc;
+  background-color: #fafafa;
   border: 3px solid #9aa2a9;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -1378,9 +1380,37 @@ small {
   outline: none;
 }
 
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                ...
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                ...
+            </tr>
+            ...
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                ...
+            </tr>
+        </tfoot>
+    </table>
+</div>
+*/
 .table {
   display: grid;
-  margin: -1px 0 calc(1rem - 1px) 0;
   line-height: 1;
   background-color: #fff;
   border: 2px solid #c4c9cb;
@@ -1389,45 +1419,55 @@ small {
 }
 .table th,
 .table td {
+  height: 4rem;
   padding: 0.5rem;
   vertical-align: middle;
 }
 .table th {
-  height: 3rem;
   text-align: left;
-  color: #363639;
-  background-color: #fafcfc;
+  color: #53555c;
+  background-color: #fafafa;
   border-bottom: 2px solid #c4c9cb;
-}
-.table td {
-  height: 3rem;
 }
 .table tr:not(:last-of-type) td {
   border-bottom: 2px solid #c4c9cb;
 }
 .table tr:hover td {
-  background-color: white;
+  background-color: #fafafa;
+}
+.table thead th:first-child {
+  border-radius: 0.25rem 0 0 0;
+}
+.table thead th:last-child {
+  border-radius: 0 0.25rem 0 0;
+}
+.table tbody tr:last-of-type td:first-child,
+.table tfoot tr:last-of-type td:first-child,
+.table tfoot tr:last-of-type th:first-child {
+  border-radius: 0 0 0 0.25rem;
+}
+.table tbody tr:last-of-type td:last-child,
+.table tfoot tr:last-of-type td:last-child tfoot tr:last-of-type th:last-child {
+  border-radius: 0 0 0.25rem 0;
 }
 .table--striped tr:nth-of-type(even) td {
-  background-color: #fefefe;
+  background-color: #fafafa;
 }
 .table--striped tr:nth-of-type(odd):hover td {
   background-color: #fff;
 }
-.table--condensed th {
-  height: 2rem;
-}
+.table--condensed th,
 .table--condensed td {
-  height: 2rem;
+  height: 3rem;
+}
+.table .form-group {
+  margin-bottom: 0;
 }
 
 .table__actions {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
   justify-content: end;
-  grid-gap: 0.5rem;
-  margin: -0.5rem;
-  padding-right: 0.5rem;
+  gap: 0.5rem;
 }
 
 #grid-toggle {
@@ -1519,7 +1559,7 @@ small {
 .panel__header {
   margin-bottom: -1px;
   padding: 1rem;
-  background-color: #fafcfc;
+  background-color: #fafafa;
   border-bottom: 2px solid #c4c9cb;
 }
 
@@ -1536,7 +1576,7 @@ small {
 .panel__footer {
   margin-top: -1px;
   padding: 0.5rem 1rem;
-  background-color: #fafcfc;
+  background-color: #fafafa;
   border-top: 2px solid #c4c9cb;
 }
 
@@ -1665,7 +1705,7 @@ small {
   background-color: #1861C8;
 }
 .paint-chip--gray-100 .paint-chip__color {
-  background-color: #fafcfc;
+  background-color: #fafafa;
 }
 .paint-chip--gray-200 .paint-chip__color {
   background-color: #c4c9cb;

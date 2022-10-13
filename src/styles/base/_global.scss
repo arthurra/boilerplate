@@ -86,7 +86,7 @@ section {
 code {
   border: $border;
   background-color: $gray-100;
-  padding: calc($padding-xs / 2) $padding-xs;
+  padding: 0 $padding-xs;
   border-radius: $border-radius;
   font-family: $font-family-mono;
   font-feature-settings: normal;
