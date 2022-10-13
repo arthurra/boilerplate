@@ -34,7 +34,6 @@
 // ---------------------------------- \\
 
 $table-cell-padding: $padding-sm;
-// $table-cell-height: calc($padding-base * 4);
 $table-cell-height: calc($button-height + calc($table-cell-padding * 2));
 $condensed-table-cell-height: calc($table-cell-height * 0.75);
 
@@ -44,7 +43,6 @@ $condensed-table-cell-height: calc($table-cell-height * 0.75);
 // ---------------------------------- \\
 
 .table {
-  @extend %p;
   display: grid;
   line-height: 1;
   background-color: #fff;
@@ -54,8 +52,9 @@ $condensed-table-cell-height: calc($table-cell-height * 0.75);
 
   th,
   td {
+    @extend %p;
     height: $table-cell-height;
-    padding: $table-cell-padding;
+    padding: $table-cell-padding calc($table-cell-padding * 2);
     vertical-align: middle;
   }
 

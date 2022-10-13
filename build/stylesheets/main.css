@@ -253,7 +253,8 @@ h6 {
   padding-bottom: 1rem;
 }
 
-.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .table, .form-group__file-label, .form-group__input, .button, p, body, li {
+.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .table th,
+.table td, .form-group__file-label, .form-group__input, .button, p, body, li {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -945,7 +946,8 @@ h6 {
   padding-bottom: 1rem;
 }
 
-.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .table, .form-group__file-label, body, li, p, .button, .form-group__input {
+.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .table th,
+.table td, .form-group__file-label, body, li, p, .button, .form-group__input {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1436,7 +1438,7 @@ small {
 .table th,
 .table td {
   height: 4rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   vertical-align: middle;
 }
 .table th {
