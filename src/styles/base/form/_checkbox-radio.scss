@@ -46,7 +46,7 @@
 .form-group--radio {
   grid-template-rows: auto $input-height;
   grid-template-columns: auto;
-  grid-auto-rows: $input-height;
+  grid-auto-rows: minmax($input-height, auto);
   grid-template-areas:
     "label"
     "inputs";
@@ -58,11 +58,10 @@
 .form-group--radio .form-group__input {
   grid-area: auto;
   display: grid;
-  grid-template-rows: $input-height;
   grid-template-columns: $input-icon-width auto;
   grid-template-areas: "input label";
   align-items: center;
-  padding: 0 $padding-sm 0 0;
+  padding: $padding-sm $padding-sm $padding-sm 0;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -89,7 +88,6 @@
 .form-group__checkbox-label,
 .form-group__radio-label {
   grid-area: label;
-  line-height: 1.4;
 }
 
 .form-group--checkbox .form-group__label,

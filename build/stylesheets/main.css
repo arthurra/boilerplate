@@ -692,19 +692,19 @@ small {
 }
 .form-group__input::-webkit-input-placeholder {
   color: #9aa2a9;
-  opacity: 0.75;
+  opacity: 1;
 }
 .form-group__input::-moz-placeholder {
   color: #9aa2a9;
-  opacity: 0.75;
+  opacity: 1;
 }
 .form-group__input::-ms-input-placeholder {
   color: #9aa2a9;
-  opacity: 0.75;
+  opacity: 1;
 }
 .form-group__input::placeholder {
   color: #9aa2a9;
-  opacity: 0.75;
+  opacity: 1;
 }
 .form-group__input:hover {
   border-color: #6B52C7;
@@ -983,7 +983,7 @@ small {
 .form-group--radio {
   grid-template-rows: auto 3rem;
   grid-template-columns: auto;
-  grid-auto-rows: 3rem;
+  grid-auto-rows: minmax(3rem, auto);
   grid-template-areas: "label" "inputs";
   grid-row-gap: 0.5rem;
   justify-content: start;
@@ -993,11 +993,10 @@ small {
 .form-group--radio .form-group__input {
   grid-area: auto;
   display: grid;
-  grid-template-rows: 3rem;
   grid-template-columns: 3rem auto;
   grid-template-areas: "input label";
   align-items: center;
-  padding: 0 0.5rem 0 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -1023,7 +1022,6 @@ small {
 .form-group__checkbox-label,
 .form-group__radio-label {
   grid-area: label;
-  line-height: 1.4;
 }
 
 .form-group--checkbox .form-group__label,
