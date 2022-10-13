@@ -44,6 +44,8 @@
     display: inline-grid;
   }
 
+  // ----- SIZES ----- \\
+
   &--sm {
     width: 8ch;
   }
@@ -65,13 +67,13 @@
   }
 }
 
-/* LABEL */
+// ----- LABEL ----- \\
 
 .form-group__label {
   grid-area: label;
 }
 
-/* INPUT */
+// ----- INPUT ----- \\
 
 .form-group__input {
   @extend %p;
@@ -144,9 +146,53 @@
   .form-group--has-icon-right & {
     padding-right: $input-icon-width;
   }
+
+  .form-group--success & {
+    border-color: $color-success;
+    box-shadow: 0 0 0 ($border-width * 2) $color-success-light, 
+                $button-box-shadow-base;
+  }
+
+  .form-group--warning & {
+    border-color: $color-warning;
+    box-shadow: 0 0 0 ($border-width * 2) $color-warning-light, 
+                $button-box-shadow-base;
+  }
+
+  .form-group--error &,
+  .form-group--danger & {
+    border-color: $color-danger;
+    box-shadow: 0 0 0 ($border-width * 2) $color-danger-light, 
+                $button-box-shadow-base;
+  }
+
+  .form-group--info & {
+    border-color: $color-info;
+    box-shadow: 0 0 0 ($border-width * 2) $color-info-light, 
+                $button-box-shadow-base;
+  }
+
+  .form-group--info &:hover,
+  .form-group--success &:hover,
+  .form-group--warning &:hover,
+  .form-group--error &:hover,
+  .form-group--danger &:hover{
+    border-color: $color-primary;
+    box-shadow: none;
+  }
+
+  .form-group--info &:focus,
+  .form-group--success &:focus,
+  .form-group--warning &:focus,
+  .form-group--error &:focus,
+  .form-group--danger &:focus{
+    border-color: $color-primary;
+    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+                $button-box-shadow-base;
+  }
 }
 
-/* ICONS */
+// ----- ICONS ----- \\
 
 .form-group__input-icon {
   display: flex;
@@ -189,9 +235,7 @@
   }
 }
 
-
-
-/* HELP TEXT */
+// ----- HELP TEXT ----- \\
 
 .form-group__help-text {
   @extend %h6;
@@ -199,6 +243,14 @@
   display: inline-block;
   padding-top: $padding-sm;
   color: $text-color;
+
+  &--primary {
+    color: $color-primary;
+  }
+
+  &--secondary {
+    color: $color-secondary;
+  }
 
   &--success {
     color: $color-success;
