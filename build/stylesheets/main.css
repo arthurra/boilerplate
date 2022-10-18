@@ -4,6 +4,10 @@
   display: none;
 }
 
+.u-mb-lg {
+  margin-bottom: 1.5rem;
+}
+
 .u-pt0 {
   padding-top: 0;
 }
@@ -254,7 +258,7 @@ h6 {
 }
 
 .paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .table th,
+.button [disabled]:before, .button--icon:before, .table th,
 .table td, .form-group__file-label, .form-group__input, .button, p, body, li {
   font-weight: 500;
   font-size: 1rem;
@@ -525,6 +529,22 @@ small {
 .button--outline.button--danger:active {
   background-color: #da3e42;
 }
+.button--outline.button--info {
+  color: #1861C8;
+}
+.button--outline.button--info:focus {
+  color: #1861C8;
+  background-color: #fff;
+  border-color: #1861C8;
+}
+.button--outline.button--info:hover {
+  color: #fff;
+  background-color: #1861C8;
+  border-color: #1861C8;
+}
+.button--outline.button--info:active {
+  background-color: #1861C8;
+}
 .button--link {
   color: #6F7281;
   background-color: transparent;
@@ -633,6 +653,33 @@ small {
 }
 .button--link.button--danger:active {
   background-color: #da3e42;
+}
+.button--link.button--info {
+  color: #1861C8;
+}
+.button--link.button--info:focus {
+  color: #1861C8;
+  background-color: #fff;
+  border-color: #1861C8;
+  box-shadow: 0 0 0 4px #C8E4FE, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+}
+.button--link.button--info:hover {
+  color: #fff;
+  background-color: #1861C8;
+  border-color: #1861C8;
+}
+.button--link.button--info:active {
+  background-color: #1861C8;
+}
+.button--icon {
+  width: 3rem;
+  min-width: 3rem;
+}
+.button--rounded {
+  border-radius: 3rem;
+}
+.button--rounded.button--sm {
+  border-radius: 2.25rem;
 }
 .button--sm {
   min-height: 2.25rem;
@@ -948,7 +995,7 @@ h6 {
 }
 
 .paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .table th,
+.button [disabled]:before, .button--icon:before, .table th,
 .table td, .form-group__file-label, body, li, p, .button, .form-group__input {
   font-weight: 500;
   font-size: 1rem;
@@ -1498,11 +1545,11 @@ small {
 }
 
 .has-tooltip, .button.disabled,
-.button [disabled] {
+.button [disabled], .button--icon {
   position: relative;
 }
 .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before {
+.button [disabled]:before, .button--icon:before {
   content: attr(aria-label);
   display: block;
   position: absolute;
@@ -1523,7 +1570,7 @@ small {
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .has-tooltip:after, .button.disabled:after,
-.button [disabled]:after {
+.button [disabled]:after, .button--icon:after {
   content: "";
   position: absolute;
   top: 0.25rem;
@@ -1541,19 +1588,19 @@ small {
   transition: all 75ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .has-tooltip:hover:before, .button.disabled:hover:before,
-.button [disabled]:hover:before, .has-tooltip:hover:after, .button.disabled:hover:after,
-.button [disabled]:hover:after, .has-tooltip:focus:before, .button.disabled:focus:before,
-.button [disabled]:focus:before, .has-tooltip:focus:after, .button.disabled:focus:after,
-.button [disabled]:focus:after, .has-tooltip:focus-within:before, .button.disabled:focus-within:before,
-.button [disabled]:focus-within:before, .has-tooltip:focus-within:after, .button.disabled:focus-within:after,
-.button [disabled]:focus-within:after {
+.button [disabled]:hover:before, .button--icon:hover:before, .has-tooltip:hover:after, .button.disabled:hover:after,
+.button [disabled]:hover:after, .button--icon:hover:after, .has-tooltip:focus:before, .button.disabled:focus:before,
+.button [disabled]:focus:before, .button--icon:focus:before, .has-tooltip:focus:after, .button.disabled:focus:after,
+.button [disabled]:focus:after, .button--icon:focus:after, .has-tooltip:focus-within:before, .button.disabled:focus-within:before,
+.button [disabled]:focus-within:before, .button--icon:focus-within:before, .has-tooltip:focus-within:after, .button.disabled:focus-within:after,
+.button [disabled]:focus-within:after, .button--icon:focus-within:after {
   opacity: 1;
   -webkit-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 [disabled].has-tooltip::before, [disabled].button.disabled::before,
-.button [disabled]::before {
+.button [disabled]::before, [disabled].button--icon::before {
   content: attr(aria-label) " Disabled";
 }
 

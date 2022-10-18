@@ -28,7 +28,7 @@
   </aside>
   <main>
 
-    <button onclick="toggleGrid()" id="grid-toggle" class="button button--icon" data-show="false">
+    <button onclick="toggleGrid()" id="grid-toggle" class="button" data-show="false">
       <span class="button__icon hidden">
         <i class="far fa-eye-slash"></i>
       </span>
@@ -692,16 +692,12 @@
 
       <div class="grid">
         <button class="button button--outline"> Button </button>
-        <button class="button button--outline button--hover"> Hover </button>
-        <button class="button button--outline button--pressed"> Pressed </button>
-        <button class="button button--outline button--icon">
-          <span class="button__icon">
-            <i class="far fa-thumbs-up"></i>
-          </span>
-          <span class="button__icon-label"> Icon </span>
-        </button>
-        <button class="button button--outline button--confirm"> Confirm </button>
+        <button class="button button--outline button--primary"> Primary </button>
+        <button class="button button--outline button--secondary"> Secondary </button>
+        <button class="button button--outline button--success"> Success </button>
+        <button class="button button--outline button--warning"> Warning </button>
         <button class="button button--outline button--danger"> Danger </button>
+        <button class="button button--outline button--info"> Info </button>
         <button class="button button--outline disabled" disabled> Disabled </button>
       </div>
 
@@ -709,57 +705,51 @@
       <p> Link buttons work particularly well in situations where you might use a small button (e.g. within a table cell) to focus more visual attention on the data rather than a bright colorful button. </p>
       <div class="grid">
         <button class="button button--link"> Button </button>
-        <button class="button button--link button--hover"> Hover </button>
-        <button class="button button--link button--pressed"> Pressed </button>
-        <button class="button button--link button--icon">
-          <span class="button__icon">
-            <i class="far fa-thumbs-up"></i>
-          </span>
-          <span class="button__icon-label"> Icon </span>
-        </button>
-        <button class="button button--link button--confirm"> Confirm </button>
+        <button class="button button--link button--primary"> Primary </button>
+        <button class="button button--link button--secondary"> Secondary </button>
+        <button class="button button--link button--success"> Success </button>
+        <button class="button button--link button--warning"> Warning </button>
         <button class="button button--link button--danger"> Danger </button>
+        <button class="button button--link button--info"> Info </button>
         <button class="button button--link disabled" disabled> Disabled </button>
       </div>
 
+      <h3> Icon Buttons </h3>
+      <p> Icon buttons can be used in a situations where you need to save space, or if there are several secondary actions the that user can take. All icon buttons have a tooltip built in so be sure to set the <code>aria-label=""</code> property for good accessibility.</p>
+      <div class="grid">
+        <button class="button button--icon" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon button--primary" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon button--secondary" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon button--success" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon button--warning" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon button--danger" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon button--info" aria-label="Menu"> <i class="far fa-bars"></i> </button>
+        <button class="button button--icon disabled" aria-label="Menu" disabled> <i class="far fa-bars"></i> </button>
+      </div>
+
+      <h3> Rounded Buttons </h3>
+      <p> Rounds the bounds of the button into a pill shape. This class can be added to any of the other button moddifiers to achieve the same effect. </p>
+      <div class="grid">
+        <button class="button button--rounded"> Button </button>
+        <button class="button button--rounded button--primary"> Primary </button>
+        <button class="button button--rounded button--secondary"> Secondary </button>
+        <button class="button button--rounded button--success"> Success </button>
+        <button class="button button--rounded button--warning"> Warning </button>
+        <button class="button button--rounded button--danger"> Danger </button>
+        <button class="button button--rounded button--info"> Info </button>
+        <button class="button button--rounded disabled" disabled> Disabled </button>
+      </div>
+
       <h3> Small Buttons </h3>
-      <p> Small buttons fit well inside of table cells and line items. </p>
-      <div class="grid-columns-5">
-
-        <!-- small default -->
+      <p> Small buttons fit well inside of table cells and line items.  This class can be added to any of the other button moddifiers to achieve the same effect. </p>
+      <div class="grid u-mb-lg">
         <button class="button button--sm"> Button </button>
-        <button class="button button--sm button--hover"> Hover </button>
-        <button class="button button--sm button--pressed"> Pressed </button>
-        <button class="button button--sm button--icon">
-          <span class="button__icon">
-            <i class="far fa-thumbs-up"></i>
-          </span>
-          <span class="button__icon-label"> Icon </span>
-        </button>
-        <button class="button button--sm disabled" disabled> Disabled </button>
-
-        <!-- small outline -->
-        <button class="button button--sm button--outline"> Button </button>
-        <button class="button button--sm button--outline button--hover"> Hover </button>
-        <button class="button button--sm button--outline button--pressed"> Pressed </button>
-        <button class="button button--sm button--outline button--icon">
-          <span class="button__icon">
-            <i class="far fa-thumbs-up"></i>
-          </span>
-          <span class="button__icon-label"> Icon </span>
-        </button>
-        <button class="button button--sm disabled" disabled> Disabled </button>
-
-        <!-- small link -->
-        <button class="button button--sm button--link"> Button </button>
-        <button class="button button--sm button--link button--hover"> Hover </button>
-        <button class="button button--sm button--link button--pressed"> Pressed </button>
-        <button class="button button--sm button--link button--icon">
-          <span class="button__icon">
-            <i class="far fa-thumbs-up"></i>
-          </span>
-          <span class="button__icon-label"> Icon </span>
-        </button>
+        <button class="button button--sm button--primary"> Primary </button>
+        <button class="button button--sm button--secondary"> Secondary </button>
+        <button class="button button--sm button--success"> Success </button>
+        <button class="button button--sm button--warning"> Warning </button>
+        <button class="button button--sm button--danger"> Danger </button>
+        <button class="button button--sm button--info"> Info </button>
         <button class="button button--sm disabled" disabled> Disabled </button>
       </div>
     </section>

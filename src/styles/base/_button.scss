@@ -338,6 +338,26 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         background-color: $color-danger;
       }
     }
+
+    &.button--info {
+      color: $color-info;
+
+      &:focus {
+        color: $color-info;
+        background-color: #fff;
+        border-color: $color-info;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: $color-info;
+        border-color: $color-info;
+      }
+
+      &:active {
+        background-color: $color-info;
+      }
+    }
   }
 
   &--link {
@@ -481,6 +501,42 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       &:active {
         background-color: $color-danger;
       }
+    }
+
+    &.button--info {
+      color: $color-info;
+
+      &:focus {
+        color: $color-info;
+        background-color: #fff;
+        border-color: $color-info;
+        box-shadow: 0 0 0 ($border-width * 2) $color-info-light,
+                    $button-box-shadow-base;
+      }
+      
+      &:hover {
+        color: #fff;
+        background-color: $color-info;
+        border-color: $color-info;
+      }
+  
+      &:active {
+        background-color: $color-info;
+      }
+    }
+  }
+
+  &--icon {
+    @extend %tooltip;
+    width: $button-height;
+    min-width: $button-height;
+  }
+
+  &--rounded {
+    border-radius: $button-height;
+
+    &.button--sm {
+      border-radius: $small-button-height;
     }
   }
 
