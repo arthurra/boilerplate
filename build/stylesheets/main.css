@@ -229,7 +229,7 @@ h4 {
   padding-bottom: 1rem;
 }
 
-.description-list__label, .fieldset__label, label, h5 {
+.accordion__summary, .description-list__label, .fieldset__label, label, h5 {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -269,7 +269,7 @@ p {
   padding-bottom: 1rem;
 }
 
-.description-list__label, .fieldset__label, label {
+.accordion__summary, .description-list__label, .fieldset__label, label {
   color: #53555c;
 }
 
@@ -969,7 +969,7 @@ h4 {
   padding-bottom: 1rem;
 }
 
-h5, .description-list__label, .fieldset__label, label {
+h5, .accordion__summary, .description-list__label, .fieldset__label, label {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -1009,7 +1009,7 @@ p {
   padding-bottom: 1rem;
 }
 
-.description-list__label, .fieldset__label, label {
+.accordion__summary, .description-list__label, .fieldset__label, label {
   color: #53555c;
 }
 
@@ -1910,6 +1910,63 @@ small {
 
 .paint-chip__values {
   color: #9aa2a9;
+}
+
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<details class="accordion">
+    <summary class="accordion__summary">Summary</summary>
+    <p class="accordion__content">Lorem ipsum...</p>
+</details>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.accordion__summary {
+  padding: 0.25rem;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.accordion__summary:hover {
+  color: #35247C;
+  background-color: #E1DDF4;
+}
+
+.accordion__summary:focus {
+  outline: none;
+  border-color: #6B52C7;
+  box-shadow: 0 0 0 4px #E1DDF4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+}
+
+.accordion__content {
+  padding: 1rem 0.25rem;
+}
+
+/* ACCORDION CARD */
+.accordion--card .accordion__summary {
+  padding: 1rem;
+  background-color: #fafafa;
+  border: 2px solid #c4c9cb;
+}
+.accordion--card .accordion__summary:hover, .accordion--card .accordion__summary:focus {
+  border-color: #6B52C7;
+}
+.accordion--card .accordion__summary:hover {
+  background-color: #E1DDF4;
+}
+.accordion--card[open] .accordion__summary {
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+.accordion--card[open] .accordion__content {
+  padding: 1rem;
+  border: 2px solid #c4c9cb;
+  border-top: none;
+  border-radius: 0 0 0.25rem 0.25rem;
 }
 
 footer {
