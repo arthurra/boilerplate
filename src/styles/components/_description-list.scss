@@ -4,7 +4,7 @@
 
 .description-list {
   display: grid;
-  grid-columns: 1fr 4fr;
+  grid-template-columns: 1fr 4fr;
   grid-gap: $padding-md;
   grid-template-areas: "lebel content";
 }
@@ -19,7 +19,7 @@
 }
 
 .description-list__label {
-  @extend %h5;
+  @extend %label;
 }
 
 .description-list__content {
