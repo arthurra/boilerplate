@@ -1795,15 +1795,50 @@ small {
   padding-bottom: 0.5rem;
 }
 
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<dl class="description-list">
+  <dt class="description-list__label">Label</dt>
+  <dd class="description-list__content">Content</dd>
+  ...
+</dl>
+*/
+/* ----------------------------------  */
+/*               LAYOUT                */
+/* ----------------------------------  */
 .description-list {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 1rem;
+  gap: 1rem;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
   grid-template-areas: "lebel content";
 }
 
+@media only screen and (max-width: 815px) {
+  .description-list {
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "label" "content";
+  }
+  .description-list__label ~ .description-list__label {
+    margin-top: 1rem;
+  }
+}
+/* ----------------------------------  */
+/*               STYLES                */
+/* ----------------------------------  */
 .description-list {
   margin-bottom: 1rem;
+}
+
+.description-list--sm {
+  gap: 0.5rem;
+}
+
+.description-list__label {
+  white-space: nowrap;
 }
 
 .paint-chip {

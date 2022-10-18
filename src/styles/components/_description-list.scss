@@ -1,25 +1,56 @@
-// ---------------------------------- \\
-//              LAYOUT                \\
-// ---------------------------------- \\
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<dl class="description-list">
+  <dt class="description-list__label">Label</dt>
+  <dd class="description-list__content">Content</dd>
+  ...
+</dl>
+*/
+
+/* ----------------------------------  */
+/*               LAYOUT                */
+/* ----------------------------------  */
 
 .description-list {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: $padding-md;
+  gap: $padding-md;
+  grid-template-columns: max-content 1fr;
   grid-template-areas: "lebel content";
 }
 
+@media only screen and (max-width: 815px) {
+  .description-list {
+    gap: $padding-sm;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "label"
+      "content";
+  }
 
-// ---------------------------------- \\
-//              DISPLAY               \\
-// ---------------------------------- \\
+  .description-list__label ~ .description-list__label {
+    margin-top: $padding-md;
+  }
+}
+
+
+/* ----------------------------------  */
+/*               STYLES                */
+/* ----------------------------------  */
 
 .description-list {
   margin-bottom: $padding-md;
 }
 
+  .description-list--sm {
+    gap: $padding-sm;
+  }
+
 .description-list__label {
   @extend %label;
+  white-space: nowrap;
 }
 
 .description-list__content {
