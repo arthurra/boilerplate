@@ -1,48 +1,63 @@
-.has-tooltip {
+%tooltip {
   position: relative;
 
   &:before {
     @extend %p;
+    content: attr(aria-label);
     display: block;
     position: absolute;
-    top: ($padding-xs * -1);
+    top: calc($padding-xs) * -1;
     left: 50%;
-    content: attr(aria-label);
     letter-spacing: 0.01em;
     line-height: 1;
     white-space: nowrap;
     color: #fff;
-    padding: $padding-xs;
-    background-color: $gray-600;
+    padding: $padding-sm;
+    background-color: $color-secondary;
     border-radius: $border-radius;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, calc(-100% + 0.5rem));
     opacity: 0;
     z-index: 100;
     pointer-events: none;
-    transition: all $transition-duration $transition-timing-function;
+    transition: all calc($transition-duration / 2) $transition-timing-function;
   }
 
   &:after {
+    content: "";
     position: absolute;
     top: $padding-xs;
     left: 50%;
-    content: "";
     width: 0;
     height: 0;
     border-width: $padding-xs;
     border-style: solid;
-    border-color: $gray-600 transparent transparent transparent;
-    transform: translate(-50%, -100%);
+    border-color: $color-secondary transparent transparent transparent;
+    transform: translate(-50%, calc(-100% + 0.5rem));
     opacity: 0;
     z-index: 100;
     pointer-events: none;
-    transition: all $transition-duration $transition-timing-function;
+    transition: all calc($transition-duration / 2) $transition-timing-function;
   }
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:hover,
+  &:focus,
+  &:focus-within {
     &:before,
     &:after {
       opacity: 1;
+      transform: translate(-50%, -100%);
+      transition: all $transition-duration $transition-timing-function;
     }
   }
+
+  &[disabled]::before {
+    content: attr(aria-label) " Disabled";
+  }
+}
+
+.has-tooltip {
+  @extend %tooltip
 }

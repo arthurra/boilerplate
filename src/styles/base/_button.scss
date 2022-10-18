@@ -58,6 +58,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
   &.disabled,
   [disabled] {
+    @extend %tooltip;
     color: $text-color-light !important;
     background: $gray-100 !important;
     border: $border !important;
