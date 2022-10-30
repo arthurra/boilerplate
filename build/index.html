@@ -209,11 +209,11 @@
       <div class="grid">
         <div>
           <h1> Heading 1 </h1>
-          <h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. </h4>
-          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
+          <h4 class="u-mb-lg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt. </h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
         <div>
-          <h3> Header 3 </h3>
+          <h3 class="u-mt-md"> Header 3 </h3>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima, adipisci porro totam in eligendi dolorem dignissimos velit facilis fuga tempore neque natus repudiandae, unde necessitatibus sit. Dolor optio corrupti fugit eveniet minima et. Odio tempora similique eaque quae at illum voluptate nobis sint corporis, eos placeat recusandae sed nam fuga excepturi perferendis. Sapiente ab recusandae tempora odio eius quam mollitia numquam error quisquam amet dicta ipsa, reiciendis ipsam accusantium ad ipsum eos? Mollitia, necessitatibus? </p>
         </div>
       </div>
@@ -291,8 +291,6 @@
         </div>
       </div>
 
-      <!-- TODO -->
-      <!-- Make file inputs keyboard accessible -->
       <h3> File Upload Input </h3>
       <div class="grid">
         <div class="form-group form-group--file">
@@ -317,6 +315,114 @@
           <span id="help-block4" class="form-group__help-text">
             <i class="far fa-info-circle"></i>
             Acceptable file types: .jpg .png .gif
+          </span>
+        </div>
+      </div>
+
+      <h3>Toggles</h3>
+      <div class="grid">
+        <div class="">
+          <label for="" id="binary-label">Binary</label>
+
+        </div>
+        <div class="">
+          <label for="" id="toggle-button-label">Toggle Buttons</label>
+
+        </div>
+      </div>
+
+      <h3>States & Validation</h3>
+      <div class="grid grid-columns">
+        <!-- success -->
+        <div class="form-group form-group--success">
+          <label class="form-group__label" for="states-input1"> Input Label </label>
+          <input id="states-input1" class="form-group__input" type="text" name="" value="" placeholder="Success">
+          <span class="form-group__help-text">
+            <i class="far fa-check"></i>
+            Success
+          </span>
+        </div>
+
+        <!-- warning -->
+        <div class="form-group form-group--warning">
+          <label class="form-group__label" for="states-input2"> Input Label </label>
+          <input id="states-input2" class="form-group__input" type="text" name="" value="" placeholder="Warning">
+          <span class="form-group__help-text">
+            <i class="far fa-exclamation-triangle"></i>
+            Warning
+          </span>
+        </div>
+
+        <!-- danger -->
+        <div class="form-group form-group--danger">
+          <label class="form-group__label" for="states-input3"> Input Label </label>
+          <input id="states-input3" class="form-group__input" type="text" name="" value="" placeholder="Error">
+          <span class="form-group__help-text">
+            <i class="far fa-times"></i>
+            Error
+          </span>
+        </div>
+
+        <!-- info -->
+        <div class="form-group form-group--info">
+          <label class="form-group__label" for="states-input4"> Input Label </label>
+          <input id="states-input4" class="form-group__input" type="text" name="" value="" placeholder="Info">
+          <span class="form-group__help-text">
+            <i class="far fa-info-circle"></i>
+            Info
+          </span>
+        </div>
+
+        <!-- disabled -->
+        <div class="form-group">
+          <label class="form-group__label" for="states-input5"> Input Label </label>
+          <input id="states-input5" class="form-group__input" type="text" name="" value="" placeholder="Disabled" disabled>
+          <span class="form-group__help-text">
+            <i class="far fa-question-circle"></i>
+            Disabled
+          </span>
+        </div>
+
+        <!-- readonly -->
+        <div class="form-group">
+          <label class="form-group__label" for="states-input6"> Input Label </label>
+          <input id="states-input6" class="form-group__input" type="text" name="" value="Read Only" placeholder="Text input" readonly>
+          <span class="form-group__help-text">
+            <i class="far fa-eye"></i>
+            Read Only
+          </span>
+        </div>
+      </div>
+
+      <h3>Icons</h3>
+      <div class="grid">
+        <!-- left -->
+        <div class="form-group form-group--has-icon-left">
+          <label class="form-group__label" for="icons-input1"> Input Label </label>
+          <input id="icons-input1" class="form-group__input" type="text" name="" value="" placeholder="Text input">
+          <span class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user"></i>
+          </span>
+        </div>
+
+        <!-- right -->
+        <div class="form-group form-group--has-icon-right">
+          <label class="form-group__label" for="icons-input2"> Input Label </label>
+          <input id="icons-input2" class="form-group__input" type="text" name="" value="" placeholder="Text input">
+          <span class="form-group__input-icon form-group__input-icon--right form-group__input-icon--success">
+            <i class="far fa-check"></i>
+          </span>
+        </div>
+
+        <!-- both -->
+        <div class="form-group form-group--has-icon-left form-group--has-icon-right">
+          <label class="form-group__label" for="icons-input3"> Input Label </label>
+          <input id="icons-input3" class="form-group__input" type="text" name="" value="" placeholder="Text input">
+          <span class="form-group__input-icon form-group__input-icon--left">
+            <i class="far fa-user"></i>
+          </span>
+          <span class="form-group__input-icon form-group__input-icon--right form-group__input-icon--success">
+            <i class="far fa-check"></i>
           </span>
         </div>
       </div>

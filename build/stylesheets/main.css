@@ -4,6 +4,10 @@
   display: none;
 }
 
+.u-mt-md {
+  margin-top: 1rem;
+}
+
 .u-mb-lg {
   margin-bottom: 1.5rem;
 }
@@ -213,7 +217,7 @@ h3 {
 }
 
 h3 {
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
   padding-bottom: 1rem;
 }
 
@@ -795,19 +799,19 @@ small {
 }
 .form-group__input.disabled::-webkit-input-placeholder, .form-group__input[disabled]::-webkit-input-placeholder {
   color: #363639;
-  opacity: 1;
+  opacity: 0.5;
 }
 .form-group__input.disabled::-moz-placeholder, .form-group__input[disabled]::-moz-placeholder {
   color: #363639;
-  opacity: 1;
+  opacity: 0.5;
 }
 .form-group__input.disabled::-ms-input-placeholder, .form-group__input[disabled]::-ms-input-placeholder {
   color: #363639;
-  opacity: 1;
+  opacity: 0.5;
 }
 .form-group__input.disabled::placeholder, .form-group__input[disabled]::placeholder {
   color: #363639;
-  opacity: 1;
+  opacity: 0.5;
 }
 .form-group__input.disabled:hover, .form-group__input[disabled]:hover {
   border: 2px solid #c4c9cb;
@@ -861,7 +865,7 @@ small {
   position: relative;
   align-items: center;
   justify-content: center;
-  pointer-events: none;
+  font-size: 125%;
 }
 .form-group__input-icon--left {
   grid-area: left-icon;
@@ -875,16 +879,16 @@ small {
 .form-group__input-icon--secondary {
   color: #35247C;
 }
-.form-group__input-icon--success {
+.form-group__input-icon--success, .form-group--success .form-group__input-icon {
   color: #1a8a60;
 }
-.form-group__input-icon--warning {
+.form-group__input-icon--warning, .form-group--warning .form-group__input-icon {
   color: #D28A25;
 }
-.form-group__input-icon--danger {
+.form-group__input-icon--error, .form-group__input-icon--danger, .form-group--error .form-group__input-icon, .form-group--danger .form-group__input-icon {
   color: #da3e42;
 }
-.form-group__input-icon--info {
+.form-group__input-icon--info, .form-group--info .form-group__input-icon {
   color: #1861C8;
 }
 
@@ -900,16 +904,16 @@ small {
 .form-group__help-text--secondary {
   color: #35247C;
 }
-.form-group__help-text--success {
+.form-group__help-text--success, .form-group--success .form-group__help-text {
   color: #1a8a60;
 }
-.form-group__help-text--warning {
+.form-group__help-text--warning, .form-group--warning .form-group__help-text {
   color: #D28A25;
 }
-.form-group__help-text--danger {
+.form-group__help-text--error, .form-group__help-text--danger, .form-group--error .form-group__help-text, .form-group--danger .form-group__help-text {
   color: #da3e42;
 }
-.form-group__help-text--info {
+.form-group__help-text--info, .form-group--info .form-group__help-text {
   color: #1861C8;
 }
 
@@ -953,7 +957,7 @@ h3 {
 }
 
 h3 {
-  padding-top: 4.5rem;
+  padding-top: 3.5rem;
   padding-bottom: 1rem;
 }
 
@@ -2013,6 +2017,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0 1rem;
+  grid-auto-flow: dense;
 }
 
 .grid-columns-half {
