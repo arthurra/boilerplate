@@ -4,9 +4,9 @@
 
 /* 
 <div class="form-group form-group--toggle">
-    <label for="assembly-toggle" class="form-group__label">Product Assembly</label>
-    <input type="checkbox" name="assembly" id="assembly-toggle" class="form-group__toggle-checkbox">
-    <label for="assembly-toggle" class="form-group__toggle"></label>
+    <label for="toggle" class="form-group__label">Enabled</label>
+    <input type="checkbox" name="assembly" id="toggle" class="form-group__toggle-checkbox">
+    <label for="toggle" class="form-group__toggle"></label>
 </div>
 */
 
@@ -38,96 +38,91 @@
 
 .form-group--toggle {
     align-items: center;
-}
 
-.form-group--toggle .form-group__label {
-    grid-area: left-icon / left-icon / toggle / toggle;
-    display: flex;
-    align-items: center;
-    height: $input-height;
-    padding: 0 calc($input-icon-width * 2) 0 $padding-md;
-    border: $border;
-    border-radius: $border-radius;
-    background-color: $gray-100;
-}
+    .form-group__label {
+        grid-area: left-icon / left-icon / toggle / toggle;
+        display: flex;
+        align-items: center;
+        height: $input-height;
+        padding: 0 calc($input-icon-width * 2) 0 $padding-md;
+        border: $border;
+        border-radius: $border-radius;
+        background-color: $gray-100;
 
-.form-group--toggle .form-group__label:hover {
-    border-color: $color-primary;
-}
-
-.form-group__toggle-checkbox {
-    /* sr only */
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important;
-}
-
-.form-group--toggle .form-group__toggle {
-    position: relative;
-    display: grid;
-    place-content: center start;
-    padding: $padding-sm;
-    height: calc($input-height * 0.75);
-    border: $border;
-    border-radius: $input-height;
-    background-color: white;
-    transform: translateX(calc($padding-md * -1))
-}
-
-    .form-group--toggle .form-group__toggle:hover {
-        cursor: pointer;
-        border-color: $color-primary;
+        &:hover {
+            border-color: $color-primary;
+        }
     }
 
-.form-group--toggle .form-group__toggle::before {
-    content: "";
-    display: block;
-    height: calc($input-height * 0.5);
-    width: calc($input-height * 0.5);
-    border-radius: 50%;
-    background-color: $gray-100;
-    border: 3px solid $text-color-light;
-    transform: translateX(0);
-    transition: all $transition-duration $transition-timing-function;
-}
+    .form-group__toggle {
+        position: relative;
+        display: grid;
+        place-content: center start;
+        padding: $padding-xs;
+        height: calc($input-height * 0.75);
+        border: $border;
+        border-radius: $input-height;
+        background-color: white;
+        transform: translateX(calc($padding-md * -1));
 
-.form-group--toggle .form-group__toggle::after {
-    content: "\f00c";
-    font-family: "Font Awesome 5 Pro";
-    position: absolute;
-    width: calc($input-height * 0.5);
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    top: 50%;
-    color: $color-primary;
-    text-align: center;
-    transition: all calc($transition-duration/2) $transition-timing-function;
-    right: $padding-sm;
-}
+        &:hover {
+            cursor: pointer;
+            border-color: $color-primary;
+        }
 
-.form-group--toggle .form-group__toggle-checkbox:checked + .form-group__toggle::before {
-    background-color: $color-primary-light;
-    border-color: $color-primary;
-    transform: translateX(75%);
-}
+        &::before {
+            content: "";
+            display: block;
+            height: calc($input-height * 0.5);
+            width: calc($input-height * 0.5);
+            border-radius: 50%;
+            background-color: $gray-200;
+            border: $border-width $border-style $text-color-light;
+            translate: 0;
+            transition: all $transition-duration $transition-timing-function;
+        }
 
-.form-group--toggle .form-group__toggle-checkbox:checked + .form-group__toggle::after {
-    opacity: 1;
-    transform: translate(0, -50%) scale(1);
-    transition-duration: $transition-duration;
-}
+        &::after {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            width: calc($input-height * 0.5);
+            translate: -50% -50%;
+            scale: 0;
+            opacity: 0;
+            top: 50%;
+            color: $color-primary;
+            text-align: center;
+            transition: all calc($transition-duration/2) $transition-timing-function;
+            right: $padding-xs;
+        }
+    }
 
-.form-group--toggle .form-group__toggle-checkbox:focus + .form-group__toggle {
-    background-color: white;
-    border-color: $color-primary;
-    box-shadow: 0 0 0 1px $color-primary, 0 0 0 5px $color-primary-light;
-    outline: none;
+    .form-group__toggle-checkbox {
+        @extend %sr-only;
+        
+        &:checked + .form-group__toggle {
+            
+            &::before {
+                background-color: $color-primary-light;
+                border-color: $color-primary;
+                translate: 100% 0;
+            }
+    
+            &::after {
+                opacity: 1;
+                translate: 0 -50%;
+                scale: 1;
+                transition-duration: $transition-duration;
+            }
+        }
+    
+        &:focus + .form-group__toggle {
+            background-color: white;
+            border-color: $color-primary;
+            box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+                        $button-box-shadow-base;
+            outline: none;
+        }
+    }
 }
