@@ -61,7 +61,7 @@
   grid-template-columns: $input-icon-width auto;
   grid-template-areas: "input label";
   align-items: center;
-  padding: $padding-sm $padding-sm $padding-sm 0;
+  padding: $padding-sm $padding-md $padding-sm 0;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -70,8 +70,8 @@
 .form-group--radio .form-group__input:focus-within {
   background-color: white;
   border-color: $color-primary;
-  box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
-              $button-box-shadow-base;
+  box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+    $button-box-shadow-base;
   outline: none;
 }
 
