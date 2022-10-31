@@ -1,0 +1,63 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<div class="combo-button">
+  <div class="toggle-button">
+    <input type="radio" name="showing" value="vendors" id="vendor-radio" class="toggle-button__input">
+    <label for="vendor-radio" class="toggle-button__label">Vendors</label>
+  </div>
+  <div class="toggle-button">
+    <input type="radio" name="showing" value="manufacturers" id="mfr-radio" class="toggle-button__input">
+    <label for="mfr-radio" class="toggle-button__label">Manufacturers</label>
+  </div>
+</div>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.combo-button {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .button,
+  .toggle-button .toggle-button__label {
+    border-radius: 0;
+    margin: 0 calc(calc($border-width / 2) * -1);
+
+    &:hover {
+      z-index: 2;
+    }
+  }
+
+  .button:first-child,
+  .toggle-button:first-child .toggle-button__label {
+    margin-left: 0;
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+  .button:last-child,
+  .toggle-button:last-child .toggle-button__label {
+    margin-right: 0;
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+}
+
+/* ---------------------------------------- */
+/*                MODIFIERS                 */
+/* ---------------------------------------- */
+
+.combo-button--stretch {
+  .button,
+  .toggle-button {
+    flex-grow: 1;
+  }
+
+  .button,
+  .toggle-button .toggle-button__label {
+    display: flex;
+  }
+}
