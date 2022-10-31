@@ -20,7 +20,7 @@
   color: #1a8a60;
 }
 
-.form-group--toggle .form-group__toggle-checkbox, .sr-only {
+.toggle-button__input, .form-group--toggle .form-group__toggle-checkbox, .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
   -webkit-clip-path: inset(50%) !important;
@@ -247,7 +247,7 @@ h4 {
   padding-bottom: 1rem;
 }
 
-.accordion__summary, .description-list__label, .fieldset__label, label, h5 {
+.toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, label, h5 {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -287,7 +287,7 @@ p {
   padding-bottom: 1rem;
 }
 
-.accordion__summary, .description-list__label, .fieldset__label, label {
+.toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, label {
   color: #53555c;
 }
 
@@ -987,7 +987,7 @@ h4 {
   padding-bottom: 1rem;
 }
 
-h5, .accordion__summary, .description-list__label, .fieldset__label, label {
+h5, .toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, label {
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -1027,7 +1027,7 @@ p {
   padding-bottom: 1rem;
 }
 
-.accordion__summary, .description-list__label, .fieldset__label, label {
+.toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, label {
   color: #53555c;
 }
 
@@ -1961,6 +1961,63 @@ small {
   border-radius: 0 0 0.25rem 0.25rem;
 }
 
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+/*
+<div class="toggle-button">
+    <input type="radio" name="" value="" id="" class="toggle-button__input">
+    <label for="" class="toggle-button__label">Vendors</label>
+</div>
+*/
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+.toggle-button {
+  position: relative;
+}
+
+.toggle-button__input.disabled, .toggle-button__input[disabled] {
+  cursor: not-allowed !important;
+  color: #9aa2a9 !important;
+  background-color: #fafafa !important;
+  border: 2px solid #c4c9cb !important;
+  box-shadow: none;
+  opacity: 0.5;
+}
+
+.toggle-button__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  min-height: 3rem;
+  padding: 0.25rem 1rem;
+  background-color: #fafafa;
+  border: 2px solid #c4c9cb;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.toggle-button__label:hover, .toggle-button__input:focus + .toggle-button__label {
+  color: #6B52C7;
+  border-color: #6B52C7;
+  background-color: #E1DDF4;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  outline: none;
+}
+.toggle-button__label:focus, .toggle-button__input:checked:focus + .toggle-button__label {
+  box-shadow: 0 0 0 4px #E1DDF4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+  z-index: 2;
+}
+.toggle-button__input:checked + .toggle-button__label {
+  color: #fff;
+  background-color: #6B52C7;
+  border-color: #6B52C7;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
+}
+
 footer {
   height: 3rem;
   background-color: #363639;
@@ -2026,5 +2083,12 @@ footer {
 nav {
   position: sticky;
   top: 1em;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 }
 /*# sourceMappingURL=maps/main.css.map */

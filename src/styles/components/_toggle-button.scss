@@ -1,0 +1,71 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<div class="toggle-button">
+    <input type="radio" name="" value="" id="" class="toggle-button__input">
+    <label for="" class="toggle-button__label">Vendors</label>
+</div>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.toggle-button {
+  position: relative;
+}
+
+.toggle-button__input {
+  @extend %sr-only;
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed !important;
+    color: $text-color-light !important;
+    background-color: $gray-100 !important;
+    border: $border !important;
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+
+.toggle-button__label {
+  @extend %label;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $padding-sm;
+  position: relative;
+  min-height: $input-height;
+  padding: $padding-xs $padding-md;
+  background-color: $gray-100;
+  border: $border;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all $transition-duration $transition-timing-function;
+
+  &:hover,
+  .toggle-button__input:focus + & {
+    color: $color-primary;
+    border-color: $color-primary;
+    background-color: $color-primary-light;
+    box-shadow: $button-box-shadow-base;
+    outline: none;
+  }
+
+  &:focus,
+  .toggle-button__input:checked:focus + & {
+    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
+                $button-box-shadow-base;
+    z-index: 2;
+  }
+
+  .toggle-button__input:checked + & {
+    color: #fff;
+    background-color: $color-primary;
+    border-color: $color-primary;
+    box-shadow: $button-box-shadow-base;
+  }
+}
