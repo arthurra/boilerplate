@@ -5,34 +5,34 @@
 $gray-100: #fafafa;
 $gray-200: #c4c9cb;
 $gray-300: #9aa2a9;
-$gray-400: #6F7281;
+$gray-400: #6f7281;
 $gray-500: #53555c;
 $gray-600: #363639;
 $gray-700: #23272e;
 
-$navy-100: #E4E9ED;
-$navy-400: #1451A5;
+$navy-100: #e4e9ed;
+$navy-400: #1451a5;
 $navy-700: #082f56;
 
-$orange-100: #FEDDC3;
-$orange-400: #D28A25;
-$orange-700: #B34B18;
+$orange-100: #feddc3;
+$orange-400: #d28a25;
+$orange-700: #b34b18;
 
-$purple-100: #E1DDF4;
-$purple-400: #6B52C7;
-$purple-700: #35247C;
+$purple-100: #e1ddf4;
+$purple-400: #6b52c7;
+$purple-700: #35247c;
 
-$blue-100: #C8E4FE;
-$blue-400: #1861C8;
-$blue-700: #0F3F81;
+$blue-100: #c8e4fe;
+$blue-400: #1861c8;
+$blue-700: #0f3f81;
 
 $green-100: #d2ece3;
 $green-400: #1a8a60;
-$green-700: #0D5038;
+$green-700: #0d5038;
 
-$yellow-100: #FEE9B4;
-$yellow-400: #D28A25;
-$yellow-700: #865C18;
+$yellow-100: #fee9b4;
+$yellow-400: #d28a25;
+$yellow-700: #865c18;
 
 $red-100: #f8d8d9;
 $red-400: #da3e42;
@@ -58,11 +58,6 @@ $color-info: $blue-400;
 $color-info-light: $blue-100;
 $color-info-dark: $blue-700;
 
-
-// ---------------------------------- \\
-//             TYPOGRAPHY             \\
-// ---------------------------------- \\
-
 $title-color: $gray-600;
 
 $text-color: $gray-400;
@@ -72,12 +67,19 @@ $text-color-dark: $gray-500;
 $link-color: $color-info;
 $link-color-light: $color-info-light;
 
+// ---------------------------------- \\
+//             TYPOGRAPHY             \\
+// ---------------------------------- \\
+
 $base-font-size: 18px;
 
-$font-family-title: "Gilroy","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-$font-family-text: "Inter var","Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+$font-family-title: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-text: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-mono: "Roboto Mono", monospace;
-
 
 // ---------------------------------- \\
 //               SPACING              \\
@@ -92,7 +94,6 @@ $padding-lg: calc($padding-base * 1.5);
 $padding-xl: calc($padding-base * 2);
 $padding-xxl: calc($padding-base * 2.5);
 
-
 // ---------------------------------- \\
 //               BORDER               \\
 // ---------------------------------- \\
@@ -100,28 +101,25 @@ $padding-xxl: calc($padding-base * 2.5);
 $border-width: 2px;
 $border-style: solid;
 $border-color: $gray-200;
+$border-color-dark: $gray-300;
+$border-color-alt: $color-secondary;
 $border: $border-width $border-style $border-color;
 $border-radius: 0.25rem;
-
 
 // ---------------------------------- \\
 //              ELEVATION             \\
 // ---------------------------------- \\
 
 $elevation-100: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1),
-                0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
-$elevation-200: 0 1rem 4rem -2rem rgba(0, 0, 0, 0.5), 
-                0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
-                0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
-$elevation-300: 0 2rem 10rem -5rem rgba(0, 0, 0, 0.8), 
-                0 1rem 4rem -2rem rgba(0, 0, 0, 0.5), 
-                0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
-                0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
-                0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+  0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+$elevation-200: 0 1rem 4rem -2rem rgba(0, 0, 0, 0.5),
+  0 0.5rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+$elevation-300: 0 2rem 10rem -5rem rgba(0, 0, 0, 0.8),
+  0 1rem 4rem -2rem rgba(0, 0, 0, 0.5), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1),
+  0 0.5rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
 
 $box-shadow: $elevation-100;
 $box-shadow-dark: $elevation-200;
-
 
 // ---------------------------------- \\
 //          TIMING FUNCTIONS          \\
@@ -139,7 +137,6 @@ $ease-bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 $transition-duration: 150ms;
 $transition-timing-function: $ease-cubic;
 
-
 // ---------------------------------- \\
 //        INPUTS AND CONTROLS         \\
 // ---------------------------------- \\
@@ -149,3 +146,9 @@ $input-icon-width: $input-height;
 $input-label-height: ($input-height * 0.5);
 $input-help-text-height: $input-label-height;
 $input-abbrev-width: 5rem;
+
+// ---------------------------------- \\
+//            BREAKPOINTS             \\
+// ---------------------------------- \\
+
+$mobile-breakpoint: 950px;

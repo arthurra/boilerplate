@@ -34,21 +34,21 @@
 /* ---------------------------------------- */
 
 .fieldset__container {
-    display: flex;
+  display: flex;
 }
 
 .fieldset__label {
-    @extend %label;
+  @extend %label;
 }
 
 .fieldset__container > .form-group .form-group__input {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .fieldset__container > .form-group:first-of-type .form-group__input {
-    border-radius: $border-radius 0 0 $border-radius;
+  border-radius: $border-radius 0 0 $border-radius;
 }
 
 .fieldset__container > .form-group:last-of-type .form-group__input {
-    border-radius: 0 $border-radius $border-radius 0;
+  border-radius: 0 $border-radius $border-radius 0;
 }
