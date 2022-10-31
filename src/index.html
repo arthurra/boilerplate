@@ -29,15 +29,18 @@
   </aside>
   <main>
 
-    <button onclick="toggleGrid()" id="grid-toggle" class="button" data-show="false">
-      <span class="button__icon hidden">
-        <i class="far fa-eye-slash"></i>
-      </span>
-      <span class="button__icon">
-        <i class="far fa-eye"></i>
-      </span>
-      <span class="button__icon-label"> Grid </span>
-    </button>
+    <div id="grid-toggle" class="toggle-button">
+      <input type="checkbox" name="grid-toggle" value="" id="grid-toggle-button" class="toggle-button__input" onchange="toggleGrid()" data-show="false">
+      <label for="grid-toggle-button" class="toggle-button__label">
+        <span class="button__icon hidden">
+          <i class="far fa-eye-slash"></i>
+        </span>
+        <span class="button__icon">
+          <i class="far fa-eye"></i>
+        </span>
+        Grid
+      </label>
+    </div>
 
     <script type="text/javascript">
       let body = document.querySelector('body');
