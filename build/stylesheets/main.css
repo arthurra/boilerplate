@@ -649,7 +649,6 @@ footer {
 
 header {
   border-bottom: 2px solid #c4c9cb;
-  margin: -1px 0;
 }
 
 a {
@@ -704,115 +703,6 @@ code {
   line-height: 1;
   white-space: pre;
   vertical-align: middle;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #363639;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 2.75rem;
-  line-height: 3rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
-}
-
-h1 {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-}
-
-h2, .u-font-h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
-}
-
-h2 {
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
-}
-
-h3, .u-font-h3 {
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-h3 {
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
-}
-
-h4, .u-font-h4 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-h4 {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-.toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, .u-font-label, label, h5, .u-font-h5 {
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.01em;
-}
-
-h5 {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-.paint-chip__values, .form-group__help-text, h6 {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.01em;
-}
-
-h6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .button--icon:before, .table th,
-.table td, .form-group__file-label, .form-group__input, .button, p, .u-font-p, body, li {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-p {
-  padding-bottom: 1rem;
-}
-
-.toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, .u-font-label, label {
-  color: #53555c;
-}
-
-small {
-  font-size: 87.5%;
 }
 
 .button {
@@ -1451,115 +1341,6 @@ small {
   color: #1861c8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #363639;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 2.75rem;
-  line-height: 3rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
-}
-
-h1 {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-}
-
-.u-font-h2, h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.02em;
-}
-
-h2 {
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
-}
-
-.u-font-h3, h3 {
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-h3 {
-  padding-top: 3.5rem;
-  padding-bottom: 1rem;
-}
-
-.u-font-h4, h4 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-h4 {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-.u-font-h5, h5, .toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, .u-font-label, label {
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.01em;
-}
-
-h5 {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-.paint-chip__values, h6, .form-group__help-text {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  letter-spacing: 0.01em;
-}
-
-h6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1rem;
-}
-
-.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .button.disabled:before,
-.button [disabled]:before, .button--icon:before, .table th,
-.table td, .form-group__file-label, .u-font-p, body, li, p, .button, .form-group__input {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-p {
-  padding-bottom: 1rem;
-}
-
-.toggle-button__label, .accordion__summary, .description-list__label, .fieldset__label, .u-font-label, label {
-  color: #53555c;
-}
-
-small {
-  font-size: 87.5%;
-}
-
 /* ---------------------------------------- */
 /*                 EXAMPLE                  */
 /* ---------------------------------------- */
@@ -1907,6 +1688,7 @@ small {
   border: 2px solid #c4c9cb;
   border-radius: 0.25rem;
   background-color: #fafafa;
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .form-group--toggle .form-group__label:hover {
   border-color: #6b52c7;
@@ -1922,6 +1704,7 @@ small {
   background-color: white;
   -webkit-transform: translateX(-1rem);
           transform: translateX(-1rem);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 .form-group--toggle .form-group__toggle:hover {
   cursor: pointer;
@@ -1968,6 +1751,115 @@ small {
   border-color: #6b52c7;
   box-shadow: 0 0 0 4px #e1ddf4, 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1), 0 0 0 2px #fff inset;
   outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #363639;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+h2, .u-font-h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h3, .u-font-h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Gilroy", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+h4, .u-font-h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h4 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.toggle-button__label, .accordion__summary, .description-list__label, .u-font-label, label, .fieldset__label, h5, .u-font-h5 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.01em;
+}
+
+h5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.paint-chip__values, h6, .form-group__help-text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  letter-spacing: 0.01em;
+}
+
+h6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.paint-chip__title, .description-list__content, .list-group__item, .paint-chip, .card, .has-tooltip:before, .button.disabled:before,
+.button [disabled]:before, .button--icon:before, .table th,
+.table td, p, .u-font-p, body, li, .button, .form-group__input, .form-group__file-label {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Inter var", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+.toggle-button__label, .accordion__summary, .description-list__label, .u-font-label, label, .fieldset__label {
+  color: #53555c;
+}
+
+small {
+  font-size: 87.5%;
 }
 
 /* ---------------------------------------- */
