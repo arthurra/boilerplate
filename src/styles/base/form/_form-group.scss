@@ -27,18 +27,18 @@
 
 .form-group {
   display: grid;
-  grid-template-rows: 
-      auto 
-      $input-height 
-      auto;
+  grid-template-rows:
+    auto
+    $input-height
+    auto;
   grid-template-columns: $input-icon-width 1fr $input-icon-width;
   grid-template-areas:
-      "label      label       label"
-      "left-icon  input       right-icon"
-      "help-text  help-text   help-text";
+    "label      label       label"
+    "left-icon  input       right-icon"
+    "help-text  help-text   help-text";
   align-content: start;
   position: relative;
-  margin-bottom: $padding-lg;
+  margin-bottom: $spacing-lg;
 
   &--inline {
     display: inline-grid;
@@ -81,7 +81,7 @@
   appearance: none;
   display: block;
   max-width: 100%;
-  padding: 0 $padding-sm;
+  padding: 0 $spacing-sm;
   line-height: $input-height;
   color: $text-color;
   background-color: $input-background-color;
@@ -101,8 +101,8 @@
   &:focus {
     background-color: #fff;
     border-color: $color-primary;
-    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+      $button-box-shadow-base;
     outline: none;
   }
 
@@ -151,34 +151,34 @@
 
   .form-group--success & {
     border-color: $color-success;
-    box-shadow: 0 0 0 ($border-width * 2) $color-success-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-success-light,
+      $button-box-shadow-base;
   }
 
   .form-group--warning & {
     border-color: $color-warning;
-    box-shadow: 0 0 0 ($border-width * 2) $color-warning-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-warning-light,
+      $button-box-shadow-base;
   }
 
   .form-group--error &,
   .form-group--danger & {
     border-color: $color-danger;
-    box-shadow: 0 0 0 ($border-width * 2) $color-danger-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-danger-light,
+      $button-box-shadow-base;
   }
 
   .form-group--info & {
     border-color: $color-info;
-    box-shadow: 0 0 0 ($border-width * 2) $color-info-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-info-light,
+      $button-box-shadow-base;
   }
 
   .form-group--info &:hover,
   .form-group--success &:hover,
   .form-group--warning &:hover,
   .form-group--error &:hover,
-  .form-group--danger &:hover{
+  .form-group--danger &:hover {
     border-color: $color-primary;
     box-shadow: none;
   }
@@ -187,10 +187,10 @@
   .form-group--success &:focus,
   .form-group--warning &:focus,
   .form-group--error &:focus,
-  .form-group--danger &:focus{
+  .form-group--danger &:focus {
     border-color: $color-primary;
-    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+      $button-box-shadow-base;
   }
 }
 
@@ -211,7 +211,7 @@
     grid-area: right-icon;
   }
 
-  &--primary, 
+  &--primary,
   &--required {
     color: $color-primary;
   }
@@ -249,7 +249,7 @@
   @extend %h6;
   grid-area: help-text;
   display: inline-block;
-  padding-top: $padding-sm;
+  padding-top: $spacing-sm;
   color: $text-color;
 
   &--primary {

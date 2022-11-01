@@ -36,10 +36,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: $padding-sm;
+  gap: $spacing-sm;
   position: relative;
   min-height: $input-height;
-  padding: $padding-xs $padding-md;
+  padding: $spacing-xs $spacing-md;
   background-color: $gray-100;
   border: $border;
   border-radius: $border-radius;

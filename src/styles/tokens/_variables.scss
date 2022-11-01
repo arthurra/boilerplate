@@ -85,14 +85,14 @@ $font-family-mono: "Roboto Mono", monospace;
 //               SPACING              \\
 // ---------------------------------- \\
 
-$padding-base: 1rem;
+$spacing-base: 1rem;
 
-$padding-xs: calc($padding-base / 4);
-$padding-sm: calc($padding-base / 2);
-$padding-md: $padding-base;
-$padding-lg: calc($padding-base * 1.5);
-$padding-xl: calc($padding-base * 2);
-$padding-xxl: calc($padding-base * 2.5);
+$spacing-xs: calc($spacing-base / 4);
+$spacing-sm: calc($spacing-base / 2);
+$spacing-md: $spacing-base;
+$spacing-lg: calc($spacing-base * 1.5);
+$spacing-xl: calc($spacing-base * 2);
+$spacing-xxl: calc($spacing-base * 2.5);
 
 // ---------------------------------- \\
 //               BORDER               \\

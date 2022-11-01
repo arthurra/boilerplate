@@ -33,10 +33,9 @@
 //             VARIABLES              \\
 // ---------------------------------- \\
 
-$table-cell-padding: $padding-sm;
+$table-cell-padding: $spacing-sm;
 $table-cell-height: calc($button-height + calc($table-cell-padding * 2));
 $condensed-table-cell-height: calc($table-cell-height * 0.75);
-
 
 // ---------------------------------- \\
 //               STYLES               \\
@@ -72,7 +71,7 @@ $condensed-table-cell-height: calc($table-cell-height * 0.75);
   tr:hover td {
     background-color: $gray-100;
   }
-  
+
   thead th:first-child {
     border-radius: $border-radius 0 0 0;
   }
@@ -88,11 +87,9 @@ $condensed-table-cell-height: calc($table-cell-height * 0.75);
   }
 
   tbody tr:last-of-type td:last-child,
-  tfoot tr:last-of-type td:last-child
-  tfoot tr:last-of-type th:last-child {
+  tfoot tr:last-of-type td:last-child tfoot tr:last-of-type th:last-child {
     border-radius: 0 0 $border-radius 0;
   }
-
 
   &--striped {
     tr:nth-of-type(even) td {

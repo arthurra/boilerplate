@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     height: $input-height;
-    padding: 0 calc($input-icon-width * 2) 0 $padding-md;
+    padding: 0 calc($input-icon-width * 2) 0 $spacing-md;
     border: $border;
     border-radius: $border-radius;
     background-color: $gray-100;
@@ -58,12 +58,12 @@
     position: relative;
     display: grid;
     place-content: center start;
-    padding: $padding-xs;
+    padding: $spacing-xs;
     height: calc($input-height * 0.75);
     border: $border;
     border-radius: $input-height;
     background-color: white;
-    transform: translateX(calc($padding-md * -1));
+    transform: translateX(calc($spacing-md * -1));
 
     &:hover {
       cursor: pointer;
@@ -94,7 +94,7 @@
       color: $color-success;
       text-align: center;
       transition: all calc($transition-duration/2) $transition-timing-function;
-      right: $padding-xs;
+      right: $spacing-xs;
     }
   }
 

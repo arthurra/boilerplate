@@ -50,7 +50,7 @@
   grid-template-areas:
     "label"
     "inputs";
-  grid-row-gap: $padding-sm;
+  grid-row-gap: $spacing-sm;
   justify-content: start;
 }
 
@@ -61,7 +61,7 @@
   grid-template-columns: $input-icon-width auto;
   grid-template-areas: "input label";
   align-items: center;
-  padding: $padding-sm $padding-md $padding-sm 0;
+  padding: $spacing-sm $spacing-md $spacing-sm 0;
   text-transform: none;
   letter-spacing: normal;
 }
@@ -93,7 +93,7 @@
 .form-group--checkbox .form-group__label,
 .form-group--radio .form-group__label {
   height: $input-label-height;
-  margin-bottom: calc($padding-sm * -1);
+  margin-bottom: calc($spacing-sm * -1);
 }
 
 .form-group--checkbox .form-group__radio,

@@ -6,7 +6,6 @@ $button-height: $input-height;
 $small-button-height: $button-height * 0.75;
 $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
-
 // ---------------------------------- \\
 //              DISPLAY               \\
 // ---------------------------------- \\
@@ -16,10 +15,10 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: $padding-sm;
+  gap: $spacing-sm;
   position: relative;
   min-height: $button-height;
-  padding: $padding-sm $padding-md;
+  padding: $spacing-sm $spacing-md;
   color: $text-color;
   background-color: $gray-100;
   border: $border;
@@ -29,11 +28,11 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
   &--hover,
   &:hover,
-  &:focus{
+  &:focus {
     color: $color-primary;
     border-color: $color-primary;
   }
-  
+
   &--hover,
   &:hover {
     color: $color-primary-dark;
@@ -42,8 +41,8 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
   }
 
   &:focus {
-    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
-                $button-box-shadow-base;
+    box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+      $button-box-shadow-base;
     outline: none;
   }
 
@@ -81,9 +80,9 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-primary;
       box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
-                  $button-box-shadow-base;
+        $button-box-shadow-base;
     }
-    
+
     &:hover {
       color: #fff;
       border-color: $color-primary-dark;
@@ -105,9 +104,9 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-secondary;
       box-shadow: 0 0 0 ($border-width * 2) $color-secondary-light,
-                  $button-box-shadow-base;
+        $button-box-shadow-base;
     }
-    
+
     &:hover {
       color: #fff;
       border-color: $color-secondary;
@@ -130,9 +129,9 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-success;
       box-shadow: 0 0 0 ($border-width * 2) $color-success-light,
-                  $button-box-shadow-base;
+        $button-box-shadow-base;
     }
-    
+
     &:hover {
       color: #fff;
       border-color: $color-success;
@@ -154,9 +153,9 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-warning;
       box-shadow: 0 0 0 ($border-width * 2) $color-warning-light,
-                  $button-box-shadow-base;
+        $button-box-shadow-base;
     }
-    
+
     &:hover {
       color: #fff;
       border-color: $color-warning;
@@ -178,9 +177,9 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-danger;
       box-shadow: 0 0 0 ($border-width * 2) $color-danger-light,
-                  $button-box-shadow-base;
+        $button-box-shadow-base;
     }
-    
+
     &:hover {
       color: #fff;
       border-color: $color-danger;
@@ -202,9 +201,9 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-info;
       box-shadow: 0 0 0 ($border-width * 2) $color-info-light,
-                  $button-box-shadow-base;
+        $button-box-shadow-base;
     }
-    
+
     &:hover {
       color: #fff;
       border-color: $color-info;
@@ -224,7 +223,7 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       background-color: #fff;
       border-color: $color-primary;
     }
-    
+
     &.button--hover,
     &:hover {
       color: $color-primary-dark;
@@ -370,8 +369,8 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
       color: $color-primary;
       background-color: #fff;
       border-color: $color-primary;
-      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
-                $button-box-shadow-base;
+      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+        $button-box-shadow-base;
     }
 
     &.button--hover,
@@ -383,8 +382,8 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
     }
 
     &:focus:hover {
-      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light, 
-                  $button-box-shadow-base;
+      box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
+        $button-box-shadow-base;
     }
 
     &.button--pressed,
@@ -401,15 +400,15 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         color: $color-primary;
         background-color: #fff;
         box-shadow: 0 0 0 ($border-width * 2) $color-primary-light,
-                  $button-box-shadow-base;
+          $button-box-shadow-base;
       }
-      
+
       &:hover {
         color: #fff;
         background-color: $color-primary;
         border-color: $color-primary;
       }
-  
+
       &:active {
         background-color: $color-primary;
       }
@@ -422,15 +421,15 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         color: $color-secondary;
         background-color: #fff;
         box-shadow: 0 0 0 ($border-width * 2) $color-secondary-light,
-                  $button-box-shadow-base;
+          $button-box-shadow-base;
       }
-      
+
       &:hover {
         color: #fff;
         background-color: $color-secondary;
         border-color: $color-secondary;
       }
-  
+
       &:active {
         background-color: $color-secondary;
       }
@@ -445,15 +444,15 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         background-color: #fff;
         border-color: $color-success;
         box-shadow: 0 0 0 ($border-width * 2) $color-success-light,
-                  $button-box-shadow-base;
+          $button-box-shadow-base;
       }
-      
+
       &:hover {
         color: #fff;
         background-color: $color-success;
         border-color: $color-success;
       }
-  
+
       &:active {
         background-color: $color-success;
       }
@@ -467,15 +466,15 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         background-color: #fff;
         border-color: $color-warning;
         box-shadow: 0 0 0 ($border-width * 2) $color-warning-light,
-                  $button-box-shadow-base;
+          $button-box-shadow-base;
       }
-      
+
       &:hover {
         color: #fff;
         background-color: $color-warning;
         border-color: $color-warning;
       }
-  
+
       &:active {
         background-color: $color-warning;
       }
@@ -489,15 +488,15 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         background-color: #fff;
         border-color: $color-danger;
         box-shadow: 0 0 0 ($border-width * 2) $color-danger-light,
-                    $button-box-shadow-base;
+          $button-box-shadow-base;
       }
-      
+
       &:hover {
         color: #fff;
         background-color: $color-danger;
         border-color: $color-danger;
       }
-  
+
       &:active {
         background-color: $color-danger;
       }
@@ -511,15 +510,15 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
         background-color: #fff;
         border-color: $color-info;
         box-shadow: 0 0 0 ($border-width * 2) $color-info-light,
-                    $button-box-shadow-base;
+          $button-box-shadow-base;
       }
-      
+
       &:hover {
         color: #fff;
         background-color: $color-info;
         border-color: $color-info;
       }
-  
+
       &:active {
         background-color: $color-info;
       }
@@ -542,6 +541,6 @@ $button-box-shadow-base: $box-shadow, 0 0 0 $border-width #fff inset;
 
   &--sm {
     min-height: $small-button-height;
-    padding: 0 $padding-sm;
+    padding: 0 $spacing-sm;
   }
 }

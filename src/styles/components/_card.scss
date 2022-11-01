@@ -22,30 +22,30 @@
 /* ---------------------------------------- */
 
 .card {
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    grid-template-areas:
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-areas:
     "header"
     "body"
     "footer";
 }
 
 .card__header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .card__body {
-    grid-area: body;
+  grid-area: body;
 }
 
 .card__footer {
-    grid-area: footer;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: auto;
-    grid-gap: $padding-md;
-    justify-content: start;
-    justify-items: start;
+  grid-area: footer;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  grid-gap: $spacing-md;
+  justify-content: start;
+  justify-items: start;
 }
 
 // ---------------------------------- \\
@@ -53,81 +53,80 @@
 // ---------------------------------- \\
 
 %card {
-    @extend %p;
-    border: $border;
-    background-color: #fff;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-  }
+  @extend %p;
+  border: $border;
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
 
 /* ---------------------------------------- */
 /*                  STYLES                  */
 /* ---------------------------------------- */
 
 .card {
-    @extend %card;
+  @extend %card;
 }
 
 .card__header {
-    padding: $padding-md;
-    background-color: $gray-100;
-    border-bottom: $border;
-    border-radius: $border-radius $border-radius 0 0;
+  padding: $spacing-md;
+  background-color: $gray-100;
+  border-bottom: $border;
+  border-radius: $border-radius $border-radius 0 0;
 }
 
 .card__title {
-    margin: 0;
-    padding: 0;
-    color: $title-color;
+  margin: 0;
+  padding: 0;
+  color: $title-color;
 }
 
 .card__body {
-    position: relative;
-    min-width: 0;
-    padding: $padding-xl $padding-md
+  position: relative;
+  min-width: 0;
+  padding: $spacing-xl $spacing-md;
 }
 
 .card__footer {
-    padding: $padding-md;
-    background-color: $gray-100;
-    border-top: $border;
-    border-radius: 0 0 $border-radius $border-radius;
+  padding: $spacing-md;
+  background-color: $gray-100;
+  border-top: $border;
+  border-radius: 0 0 $border-radius $border-radius;
 }
-
 
 /* ---------------------------------------- */
 /*                 MODIFIERS                */
 /* ---------------------------------------- */
 
 .card--primary {
-    color: $color-primary-dark;
-    border-color: $color-primary;
-    background-color: $color-primary-light;
+  color: $color-primary-dark;
+  border-color: $color-primary;
+  background-color: $color-primary-light;
 }
 .card--secondary {
-    color: $color-secondary-dark;
-    border-color: $color-secondary;
-    background-color: $color-secondary-light;
+  color: $color-secondary-dark;
+  border-color: $color-secondary;
+  background-color: $color-secondary-light;
 }
 .card--success {
-    color: $color-success-dark;
-    border-color: $color-success;
-    background-color: $color-success-light;
+  color: $color-success-dark;
+  border-color: $color-success;
+  background-color: $color-success-light;
 }
 .card--warning {
-    color: $color-warning-dark;
-    border-color: $color-warning;
-    background-color: $color-warning-light;
+  color: $color-warning-dark;
+  border-color: $color-warning;
+  background-color: $color-warning-light;
 }
 
 .card--danger {
-    color: $color-danger-dark;
-    border-color: $color-danger;
-    background-color: $color-danger-light;
+  color: $color-danger-dark;
+  border-color: $color-danger;
+  background-color: $color-danger-light;
 }
 
 .card--info {
-    color: $color-info-dark;
-    border-color: $color-info;
-    background-color: $color-info-light;
+  color: $color-info-dark;
+  border-color: $color-info;
+  background-color: $color-info-light;
 }

@@ -18,46 +18,45 @@
 /*                  STYLES                  */
 /* ---------------------------------------- */
 
-
 .form-group--select::before,
 .form-group--select::after {
-    grid-area: right-icon;
-    align-self: center;
-    justify-self: center;
-    content: "";
-    position: relative;
-    border-style: solid;
-    border-width: 0.4rem 0.25rem;
-    border-radius: 2px;
-    pointer-events: none;
-    transition: border-color $transition-duration $transition-timing-function;
+  grid-area: right-icon;
+  align-self: center;
+  justify-self: center;
+  content: "";
+  position: relative;
+  border-style: solid;
+  border-width: 0.4rem 0.25rem;
+  border-radius: 2px;
+  pointer-events: none;
+  transition: border-color $transition-duration $transition-timing-function;
 }
 
 .form-group--select::before {
-    top: 0.5rem;
-    border-color: $text-color-light transparent transparent transparent;
+  top: 0.5rem;
+  border-color: $text-color-light transparent transparent transparent;
 }
 
 .form-group--select::after {
-    top: -0.5rem;
-    border-color: transparent transparent $text-color-light transparent;
+  top: -0.5rem;
+  border-color: transparent transparent $text-color-light transparent;
 }
 
 .form-group--select .form-group__input {
-    padding-right: $input-height;
+  padding-right: $input-height;
 }
 
 /* MULTIPLE */
 
 .form-group--select-multiple {
-    grid-template-rows: auto max-content auto;
+  grid-template-rows: auto max-content auto;
 }
 
-    .form-group--select-multiple .form-group__input {
-        padding-right: $padding-sm;
-    }
+.form-group--select-multiple .form-group__input {
+  padding-right: $spacing-sm;
+}
 
-    .form-group--select-multiple::before,
-    .form-group--select-multiple::after {
-        display: none;
-    }
+.form-group--select-multiple::before,
+.form-group--select-multiple::after {
+  display: none;
+}

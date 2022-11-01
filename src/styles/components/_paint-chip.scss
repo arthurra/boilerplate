@@ -26,20 +26,19 @@
   display: grid;
 }
 
-
 // ---------------------------------- \\
 //              DISPLAY               \\
 // ---------------------------------- \\
 
 .paint-chip {
   @extend %card;
-  margin-bottom: calc(#{$padding-md} - 1px);
-  padding: $padding-md;
+  margin-bottom: calc(#{$spacing-md} - 1px);
+  padding: $spacing-md;
 }
 
 .paint-chip__color {
   border-radius: $border-radius;
-  
+
   .paint-chip--primary & {
     background-color: $color-primary;
   }

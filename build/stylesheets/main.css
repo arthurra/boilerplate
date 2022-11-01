@@ -668,7 +668,8 @@ label {
   letter-spacing: 0.01em;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1rem;
 }
 
@@ -705,7 +706,12 @@ code {
   vertical-align: middle;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #363639;
 }
 
@@ -1445,7 +1451,12 @@ small {
   color: #1861c8;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #363639;
 }
 

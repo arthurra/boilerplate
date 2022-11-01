@@ -3,10 +3,10 @@
 // ---------------------------------- \\
 
 $list-group-item-height: 3rem;
-$list-group-item-padding: $padding-md;
-$list-group-item-line-height: $list-group-item-height - ($list-group-item-padding * 2);
+$list-group-item-padding: $spacing-md;
+$list-group-item-line-height: $list-group-item-height -
+  ($list-group-item-padding * 2);
 $list-group-item-badge-width: $list-group-item-height;
-
 
 // ---------------------------------- \\
 //              LAYOUT                \\
@@ -35,13 +35,12 @@ $list-group-item-badge-width: $list-group-item-height;
   grid-area: content;
 }
 
-
 // ---------------------------------- \\
 //              DISPLAY               \\
 // ---------------------------------- \\
 
 .list-group {
-  margin-bottom: calc(#{$padding-md} - 2px);
+  margin-bottom: calc(#{$spacing-md} - 2px);
   border: $border;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
@@ -49,7 +48,8 @@ $list-group-item-badge-width: $list-group-item-height;
 
 .list-group__item {
   @extend %p;
-  padding: calc(#{$list-group-item-padding} - 1px) 1rem calc(#{$list-group-item-padding} + 1px);
+  padding: calc(#{$list-group-item-padding} - 1px) 1rem
+    calc(#{$list-group-item-padding} + 1px);
   transition: all $transition-duration $transition-timing-function;
 
   &:not(:first-of-type) {
@@ -63,12 +63,12 @@ $list-group-item-badge-width: $list-group-item-height;
 }
 
 .list-group__item-badge {
-  padding: 0 $padding-sm;
+  padding: 0 $spacing-sm;
   font-size: 75%;
   line-height: 1rem;
   color: #fff;
   background-color: $color-secondary;
-  border-radius: $padding-sm;
+  border-radius: $spacing-sm;
 
   .list-group__item:hover & {
     text-decoration: underline solid $color-secondary;
@@ -82,5 +82,5 @@ $list-group-item-badge-width: $list-group-item-height;
 }
 
 .list-group__item-body {
-  padding-bottom: $padding-sm;
+  padding-bottom: $spacing-sm;
 }

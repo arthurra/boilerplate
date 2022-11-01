@@ -16,37 +16,36 @@
 
 .description-list {
   display: grid;
-  gap: $padding-md;
+  gap: $spacing-md;
   grid-template-columns: max-content 1fr;
   grid-template-areas: "lebel content";
 }
 
 @media only screen and (max-width: 815px) {
   .description-list {
-    gap: $padding-sm;
+    gap: $spacing-sm;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "label"
       "content";
   }
 
   .description-list__label ~ .description-list__label {
-    margin-top: $padding-md;
+    margin-top: $spacing-md;
   }
 }
-
 
 /* ----------------------------------  */
 /*               STYLES                */
 /* ----------------------------------  */
 
 .description-list {
-  margin-bottom: $padding-md;
+  margin-bottom: $spacing-md;
 }
 
-  .description-list--sm {
-    gap: $padding-sm;
-  }
+.description-list--sm {
+  gap: $spacing-sm;
+}
 
 .description-list__label {
   @extend %label;
