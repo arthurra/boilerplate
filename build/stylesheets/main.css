@@ -2597,13 +2597,6 @@ small {
   display: flex;
 }
 
-footer {
-  height: 3rem;
-  background-color: #363639;
-  color: #9aa2a9;
-  text-align: center;
-}
-
 body {
   display: grid;
   grid-template-columns: minmax(12em, 1fr) 4fr;
@@ -2628,6 +2621,18 @@ main {
 
 footer {
   grid-area: footer;
+}
+
+nav {
+  position: sticky;
+  top: 1rem;
+}
+
+footer {
+  height: 3rem;
+  background-color: #363639;
+  color: #9aa2a9;
+  text-align: center;
 }
 
 .grid {
@@ -2657,11 +2662,6 @@ footer {
   justify-items: start;
   justify-content: start;
   margin-bottom: 1rem;
-}
-
-nav {
-  position: sticky;
-  top: 1em;
 }
 
 /* ---------------------------------------- */
