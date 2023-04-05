@@ -616,6 +616,7 @@ table {
 
 html {
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -2518,25 +2519,38 @@ small {
 }
 
 .alert--primary {
-  color: #6b52c7;
+  color: #35247c;
   background-color: #e1ddf4;
   border-color: #6b52c7;
 }
 
+.alert--secondary {
+  color: #23272e;
+  background-color: #ededed;
+  border-color: #53555c;
+}
+
 .alert--info {
-  color: #1861c8;
+  color: #0f3f81;
   background-color: #c8e4fe;
   border-color: #1861c8;
 }
 
+.alert--success {
+  color: #0d5038;
+  background-color: #d2ece3;
+  border-color: #1a8a60;
+}
+
 .alert--warning {
-  color: #d28a25;
+  color: #865c18;
   background-color: #fee9b4;
   border-color: #d28a25;
 }
 
+.alert--error,
 .alert--danger {
-  color: #da3e42;
+  color: #881315;
   background-color: #f8d8d9;
   border-color: #da3e42;
 }

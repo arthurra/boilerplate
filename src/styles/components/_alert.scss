@@ -30,25 +30,38 @@
 }
 
 .alert--primary {
-  color: $color-primary;
+  color: $color-primary-dark;
   background-color: $color-primary-light;
   border-color: $color-primary;
 }
 
+.alert--secondary {
+  color: $color-secondary-dark;
+  background-color: $color-secondary-light;
+  border-color: $color-secondary;
+}
+
 .alert--info {
-  color: $color-info;
+  color: $color-info-dark;
   background-color: $color-info-light;
   border-color: $color-info;
 }
 
+.alert--success {
+  color: $color-success-dark;
+  background-color: $color-success-light;
+  border-color: $color-success;
+}
+
 .alert--warning {
-  color: $color-warning;
+  color: $color-warning-dark;
   background-color: $color-warning-light;
   border-color: $color-warning;
 }
 
+.alert--error,
 .alert--danger {
-  color: $color-danger;
+  color: $color-danger-dark;
   background-color: $color-danger-light;
   border-color: $color-danger;
 }
