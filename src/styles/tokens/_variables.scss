@@ -41,9 +41,9 @@ $red-700: #881315;
 $color-primary: $purple-400;
 $color-primary-light: $purple-100;
 $color-primary-dark: $purple-700;
-$color-secondary: $purple-700;
-$color-secondary-light: $purple-100;
-$color-secondary-dark: $purple-700;
+$color-secondary: $gray-500;
+$color-secondary-light: darken($gray-100, 5%);
+$color-secondary-dark: $gray-700;
 
 $color-danger: $red-400;
 $color-danger-light: $red-100;

@@ -1,0 +1,54 @@
+/* ---------------------------------------- */
+/*                 EXAMPLE                  */
+/* ---------------------------------------- */
+
+/*
+<div class="alert alert--danger">
+    <i class="far fa-exclamation-triangle"></i>
+    Lorem ipsum...
+</div>
+*/
+
+/* ---------------------------------------- */
+/*                  STYLES                  */
+/* ---------------------------------------- */
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  margin-bottom: $spacing-lg;
+  padding: $spacing-lg;
+  background-color: $gray-100;
+  border: $border;
+  border-color: $gray-300;
+  border-radius: $border-radius;
+}
+
+.alert--centered {
+  justify-content: center;
+}
+
+.alert--primary {
+  color: $color-primary;
+  background-color: $color-primary-light;
+  border-color: $color-primary;
+}
+
+.alert--info {
+  color: $color-info;
+  background-color: $color-info-light;
+  border-color: $color-info;
+}
+
+.alert--warning {
+  color: $color-warning;
+  background-color: $color-warning-light;
+  border-color: $color-warning;
+}
+
+.alert--danger {
+  color: $color-danger;
+  background-color: $color-danger-light;
+  border-color: $color-danger;
+}
