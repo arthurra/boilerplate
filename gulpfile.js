@@ -1,36 +1,38 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-const sass = require('gulp-sass')(require('sass'));
-var autoprefixer= require('gulp-autoprefixer');
-var sourcemaps  = require('gulp-sourcemaps');
+var gulp = require("gulp");
+var browserSync = require("browser-sync").create();
+const sass = require("gulp-sass")(require("sass"));
+var autoprefixer = require("gulp-autoprefixer");
+var sourcemaps = require("gulp-sourcemaps");
 
 // Compile styles
-gulp.task('styles', function () {
-  return gulp.src('src/styles/main.scss')
+gulp.task("styles", function () {
+  return gulp
+    .src("src/styles/main.scss")
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
-    .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest('build/stylesheets'))
+    .pipe(sourcemaps.write("./maps"))
+    .pipe(gulp.dest("docs/stylesheets"))
     .pipe(browserSync.stream());
 });
 
-gulp.task('html', function () {
-  return gulp.src('src/**/*.html')
-    .pipe(gulp.dest('build'))
+gulp.task("html", function () {
+  return gulp
+    .src("src/**/*.html")
+    .pipe(gulp.dest("docs"))
     .pipe(browserSync.stream());
 });
 
 // Static server + watch files
-gulp.task('serve', function () {
+gulp.task("serve", function () {
   browserSync.init({
     server: {
-      baseDir: "build"
-    }
+      baseDir: "docs",
+    },
   });
 
-  gulp.watch('src/styles/**/*.scss', ['styles']);
-  gulp.watch('src/**/*.html', ['html']);
+  gulp.watch("src/styles/**/*.scss", ["styles"]);
+  gulp.watch("src/**/*.html", ["html"]);
 });
 
-gulp.task('default', ['html', 'styles', 'serve']);
+gulp.task("default", ["html", "styles", "serve"]);
