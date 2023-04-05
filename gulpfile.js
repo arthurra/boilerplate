@@ -12,14 +12,14 @@ gulp.task("styles", function () {
     .pipe(sass().on("error", sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write("./maps"))
-    .pipe(gulp.dest("docs/stylesheets"))
+    .pipe(gulp.dest("build/stylesheets"))
     .pipe(browserSync.stream());
 });
 
 gulp.task("html", function () {
   return gulp
     .src("src/**/*.html")
-    .pipe(gulp.dest("docs"))
+    .pipe(gulp.dest("build"))
     .pipe(browserSync.stream());
 });
 
@@ -27,7 +27,7 @@ gulp.task("html", function () {
 gulp.task("serve", function () {
   browserSync.init({
     server: {
-      baseDir: "docs",
+      baseDir: "build",
     },
   });
 
